@@ -1,0 +1,239 @@
+/* Estilos que os botoes "adicionar aos pedidos" recebem */
+.btns-box-selected-products{
+    background-color: rgb(107, 33, 0);
+    width: 200px;
+    height: 30px;
+    margin-top: 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: rgb(255, 207, 87);
+    transition: 0.2s ease;
+}
+
+.btns-box-selected-products:hover{
+    background-color: rgb(16, 99, 16);
+}
+
+/* Nome e preco do produto selecionado */
+.names-selected-products{
+    margin-top: 30px;
+    font-size: 15px;
+    display: none;
+}
+
+.btns-box-requests{
+    display: flex;
+    justify-content: center;
+}
+
+/* Caixa que fica dentro da caixa dos pedidos */
+.box-inside-box-requests{
+    background-color: rgb(138, 60, 23);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 483px;
+    border-radius: 20px;
+}
+
+/* Nomes dos produtos que aparecem quando eles sao adicionados aos pedidos */
+.names-products-added{
+    position: relative;
+    bottom: 43px;
+    font-size: 10px;
+}
+
+/* Caixinhas dos produtos que aparecem quando a caixa dos pedidos é aberta */
+.boxes-orders-added{
+    background-color: rgb(81, 85, 26);
+    width: 100px;
+    height: 112px;
+    padding: 10px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    display: none;
+}
+
+/* Estilos que todos os botoes de remocao de produtos recebem */
+.styles-btns-remove{
+    position: relative;
+    bottom: 45px;
+    width: 80px;
+    height: 25px;
+    background-color: rgb(190, 29, 29);
+    border-radius: 20px;
+    font-size: 10px;
+    margin-top: 0;
+    color: rgb(255, 223, 141);
+    transition: 0.2s ease;
+}
+
+.styles-btns-remove:hover{
+    background-color: rgb(255, 0, 0);
+}
+
+/* Caixa que aparece quando um produto do cardapio é selecionado */
+#box-selected-product{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 170px;
+    width: 400px;
+    height: 270px;
+    background-color: rgb(148, 66, 29);
+    border-radius: 20px;
+    color: rgb(255, 207, 87);
+    display: none;
+}
+
+/* Botao de voltar da caixa do produto selecionado */
+#btn-back-box-selected-product:hover{
+    background-color: rgb(204, 0, 0);
+}
+
+/* Imagens dos produtos que aparecem na caixa do produto selecionado */
+
+#image-selected-classic-burguer, #pedidoClassico{
+    width: 3.5em;
+}
+
+#image-selected-vegetarian-burguer, #image-selected-bacon-burguer{
+    width: 3.5em;
+}
+
+#image-selected-coca-cola, #pedidoCoca{
+    width: 2em;
+}
+
+#image-selected-fanta, #pedidoFanta{
+    width: 2.5em;
+}
+
+#image-selected-sprite, #pedidoSprite{
+    width: 2.7em;
+}
+
+#image-selected-orange-juice, #pedidoLaranja{
+    width: 3em;
+}
+
+#image-selected-lemon-juice, #pedidoLimao{
+    width: 2.5em;
+}
+
+#image-selected-pineapple-juice, #pedidoAbacaxi{
+    width: 1.5em;
+}
+
+#image-selected-classic-burguer, #image-selected-vegetarian-burguer, #image-selected-bacon-burguer, #image-selected-coca-cola, #image-selected-fanta, #image-selected-sprite, #image-selected-orange-juice, #image-selected-lemon-juice, #image-selected-pineapple-juice{
+    display: none;
+}
+
+#btn-add-classic-burguer, #btn-add-vegetarian-burguer, #btn-add-bacon-burguer, #btn-add-coca-cola, #btn-add-fanta, #btn-add-sprite, #btn-add-orange-juice, #btn-add-lemon-juice, #btn-add-pineapple-burguer{
+    display: none;
+}
+
+
+
+/* Caixa dos pedidos */
+#box-requests{
+    display: flex;
+    padding: 10px 10px;
+    background-color: rgb(59, 24, 8);
+    width: 500px;
+    height: 560px;
+    border-radius: 20px;
+    color: rgb(255, 207, 87);
+    bottom: 0;
+    position: fixed;
+    display: none;
+}
+
+/* Botao que mostra a caixa dos pedidos */
+#btn-show-requests{
+    width: 300px;
+    height: 50px;
+    background-color: rgb(66, 31, 14);
+    position: fixed;
+    bottom: 10px;
+}
+
+#btn-show-requests:hover{
+    background-color: rgb(100, 38, 6);
+}
+
+/* Botao "finalizar pedido" */
+#btn-finalize-order{
+    background-color: rgb(107, 33, 0);
+    width: 150px;
+    height: 30px;
+    margin-top: 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: rgb(255, 207, 87);
+    transition: 0.2s ease;    display: none;
+}
+
+#btn-finalize-order:hover{
+    background-color: rgb(16, 99, 16);
+}
+
+/* Botao que esconde a caixa dos pedidos (botao "voltar") */
+#btn-back-requests{
+    background-color: rgb(107, 33, 0);
+    width: 100px;
+    height: 30px;
+    margin-top: 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: rgb(255, 207, 87);
+    transition: 0.2s ease;
+}
+
+#btn-back-requests:hover{
+    background-color: rgb(204, 0, 0);
+}
+
+#btn-back-requests, #btn-finalize-order{
+    margin: 20px;
+}
+
+/* Margem entre essas caixinhas */
+#box-classic-burguer, #box-vegetarian-burguer, #box-bacon-burguer, #box-coca-cola, #box-fanta, #box-sprite, #box-orange-juice, #box-lemon-juice, #box-pineapple-juice{
+    margin: 17px;
+}
+
+/* Posicao dessas caixinhas */
+#position-box-classic-burguer, #position-box-vegetarian-burguer, #position-box-bacon-burguer, #position-box-coca-cola, #position-box-fanta, #position-box-sprite, #position-box-orange-juice, #position-box-lemon-juice, #position-box-pineapple-juice{
+    position: relative;
+    bottom: 20px;
+    margin: 20px;
+}
+
+/* Tamanho dessas caixinhas */
+
+#position-box-classic-burguer, #position-box-vegetarian-burguer, #position-box-bacon-burguer{
+    width: 3.2em;
+}
+
+#position-box-coca-cola{
+    width: 1.5em;
+}
+
+#position-box-fanta{
+    width: 2em;
+}
+
+#position-box-sprite{
+    width: 2.3em;
+}
+
+#position-box-orange-juice, #position-box-lemon-juice{
+    width: 2.3em;
+}
+
+#position-box-pineapple-juice{
+    width: 1.5em;
+}

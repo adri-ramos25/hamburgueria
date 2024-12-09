@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Sans-Serif;
+    font-weight: bold;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    color: rgb(248, 145, 71);
+}
+
+li{
+    font-size: 15px;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    width: 9em;
+    height: 16em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+/* Secao 1 (cabecalho) */
+
+.box-header-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    background-color: rgb(51, 15, 3);
+    text-align: center;
+    color: rgb(232, 30, 54);
+}
+
+.logo-burguer-joint{
+    width: 15em;
+}
+
+.text-mission-burguer-joint{
+    margin-top: 50px;
+    width: 20em;
+}
+
+
+
+/* Secao 2 (links de navegacao) */
+
+.box-navigation-section{
+    text-align: center;
+    background-color: rgb(107, 33, 0);
+    color: rgb(248, 145, 71);
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.links-navigation-section{
+    padding: 10px 20px 20px 20px;
+}
+
+.border-navigation-section{
+    width: 15em;
+    margin-right: auto;
+    margin-left: auto;
+    border: 5px solid rgb(248, 145, 71);
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 8px;
+}
+
+.title-navigation-section{
+    margin-top: 8px;
+}
+
+.margin-links{
+    margin: 30px 0 0 0;
+}
+
+
+
+/* Secao 3 (cardapio) */
+
+.box-menu-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(248, 145, 71);
+    text-align: center;
+    color: rgb(107, 33, 0);
+}
+
+.title-menu-section{
+    width: 22em;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.caption{
+    width: 20.5em;
+    margin-bottom: 30px;
+}
+
+.box-products{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 5px solid rgb(107, 33, 0);
+    border-radius: 20px;
+    margin: 30px;
+    padding: 10px 10px;
+}
+
+/* Faz os botoes dos produtos ficarem alinhados */ 
+.btns-products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(170, 54, 19);
+    margin-top: 10px;
+    font-size: 12px;
+    border: 5px solid rgb(107, 33, 0);
+    border-radius: 20px;
+    text-align: center;
+    color: rgb(255, 207, 87);
+    transition: 0.2s ease;
+}
+
+.btns-products:hover{
+    background-color: rgb(232, 30, 54);
+}
+
+.align-btns-products{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.margin-btns-products{
+    margin: 10px;
+}
+
+
+/* Titulos das secoes dos produtos */
+
+.title-burguers-section, .title-soft-drinks-section{
+    width: 10em;
+    margin: auto;
+}
+
+.title-juices-section{
+    width: 15em;
+    margin: auto;
+}
+
+/* Imagens dos hamburgueres */
+
+.image-btn-classic-burguer{
+    width: 5em;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.image-btn-vegetarian-burguer{
+    width: 4.5em;
+    margin-top: 26px;
+    margin-bottom: 20px;
+}
+
+.image-btn-bacon-burguer{
+    width: 4.5em;
+    margin-top: 24px;
+    margin-bottom: 20px;
+}
+
+/* Imagens dos refrigerantes */
+
+.image-btn-coca-cola{
+    width: 2em;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.image-btn-fanta{
+    width: 2.5em;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.image-btn-sprite{
+    width: 2.7em;
+    margin-top: 42px;
+    margin-bottom: 20px;
+}
+
+/* Imagens dos sucos */
+
+.image-btn-orange-juice{
+    width: 3em;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.image-btn-lemon-juice{
+    width: 2.5em;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.image-btn-pineapple-juice{
+    width: 1.5em;
+    margin-top: 32px;
+    margin-bottom: 20px;
+}
+
+
+
+/* Secao 4 (sobre nos) */
+
+.box-about-us-section{
+    background-color: rgb(251, 177, 97);
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+    color: rgb(51, 15, 3);
+}
+
+.border-about-us-section{
+    width: 15em;
+    margin: auto;
+    border: 5px solid rgb(51, 15, 3);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.title-about-us-section{
+    margin-bottom: 20px;
+}
+
+
+
+/* Secao 5 (depoimentos dos clientes) */
+
+.box-testimonials-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(170, 54, 19);
+    text-align: center;
+    color: rgb(51, 15, 3);
+}
+
+.title-testimonials-section{
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.box-testimony-1, .box-testimony-2{
+    margin: 30px;
+}
+
+.photos-styles{
+    height: 5em;
+    width: 5em;
+    border: 5px solid rgb(51, 15, 3);
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.box-testimony-1{
+    border: 5px solid rgb(51, 15, 3);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15em;
+    height: 25em;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.box-testimony-2{
+    border: 5px solid rgb(51, 15, 3);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15em;
+    height: 25em;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.elements-box-testimony-1, .elements-box-testimony-2{
+    margin: auto;
+}
+
+
+
+/* Secao 6 (rodape) */
+
+.box-footer-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(51, 15, 3);
+    text-align: center;
+    color: rgb(232, 30, 54);
+}
+
+.logo-burguer-joint-footer-section{
+    width: 8em;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.title-contacts{
+    margin-bottom: 10px;
+    width: 320px;
+    font-size: 20px;
+    color: rgb(232, 30, 54);
+}
+
+.box-contacts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20em;
+    margin-bottom: 80px;
+    color: rgb(248, 145, 71);
+    font-size: 17px;
+}
+
+.box-contact-phone, .box-contact-email, .box-contact-instagram{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.title-follow-us-instagram{
+    color: rgb(232, 30, 54);
+    width: 270px;
+    margin-top: 70px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.text-contact-phone{
+    width: 18em;
+    margin: 10px;
+}
+
+.text-contact-email{
+    width: 13em;
+}
+
+.text-contact-instagram{
+    width: 9em;
+}
+
+.box-credits-links{
+    width: 25em;
+    margin-bottom: 80px;
+    font-size: 14px;
+}
+
+.developer-name{
+    width: 270px;
+    margin-bottom: 30px;
+    color: rgb(40, 115, 255);
+    font-weight: bold;
+    text-align: center;
+}
