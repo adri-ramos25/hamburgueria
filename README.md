@@ -4,9 +4,14 @@
 
 
 
-## Descrição
+## Sobre o Projeto
 
 Este é o meu primeiro projeto como desenvolvedor front-end. Nele eu pude praticar e aplicar diversos conceitos das tecnologias que utilizo. Ele se trata de um site interativo de uma hamburgueria fictícia, que permite que os usuários adicionem e removam produtos do cardápio de forma dinâmica.
+
+
+
+## Acesso ao Projeto
+Você pode acessar o projeto funcionando através do seguinte link: https://adri-ramos25.github.io/hamburgueria/
 
 
 
@@ -64,5 +69,5 @@ index.html                 # Página inicial
 ## Autor
 
 - **Adriano Ramos**
-- [LinkedIn] (www.linkedin.com/in/adriano-ramos25)
-- [Instagram] (https://www.instagram.com/adriano.ramos9/)
+- LinkedIn: www.linkedin.com/in/adriano-ramos25
+- Instagram: https://www.instagram.com/adriano.ramos9/
