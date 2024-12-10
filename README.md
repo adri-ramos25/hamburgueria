@@ -1,4 +1,4 @@
-# Hamburgueria
+## Hamburgueria
 
 Site de uma hamburgueria fictícia.
 
@@ -46,6 +46,7 @@ Você pode acessar o projeto funcionando através do seguinte link: [Nome do Pro
 
 ## Estrutura de Pastas
 
+```plaintext
 src/
    css/
       credits.css          # Estilos da página de créditos das imagens
@@ -55,10 +56,11 @@ src/
    js/
       addition-products.js # Lógica para adição de produtos aos pedidos
       products.js          # Lógica relacionada aos produtos
-      removal-products.js  # Lógica para remoção dos produtos dos pedidos 
+      removal-products.js  # Lógica para remoção dos produtos dos pedidos
       requests.js          # Lógica relacionada aos pedidos
 credits.html               # Página dos créditos das imagens
 index.html                 # Página inicial
+
 
 
 
