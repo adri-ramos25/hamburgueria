@@ -60,7 +60,7 @@ src/
       requests.js          # Lógica relacionada aos pedidos
 credits.html               # Página dos créditos das imagens
 index.html                 # Página inicial
-
+```
 
 
 
