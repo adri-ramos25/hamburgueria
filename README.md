@@ -53,6 +53,7 @@ src/
       removal-products.js  # Lógica para remoção dos produtos dos pedidos
       requests.js          # Lógica relacionada aos pedidos
 credits.html               # Página dos créditos das imagens
+hamburgueria.png           # Screenshot do site
 index.html                 # Página inicial
 ```
 
