@@ -1,6 +1,6 @@
 ## Hamburgueria
 
-Site de uma hamburgueria fictícia.
+![Imagens do projeto](https://github.com/adri-ramos25/hamburgueria/raw/main/hamburgueria.png)
 
 
 
@@ -10,20 +10,14 @@ Este é o meu primeiro projeto como desenvolvedor front-end. Nele eu pude pratic
 
 
 
+## Acesso ao Projeto
+Você pode acessar o projeto funcionando através do seguinte link: [Nome do Projeto - GitHub Pages] (https://seuusuario.github.io/nomedoprojeto/)
+
+
+
 ## Status do Projeto
 
 O projeto está **Concluído**.
-
-
-
-## Capturas de Tela
-
-![Imagens do projeto](https://github.com/adri-ramos25/hamburgueria/raw/main/hamburgueria.png)
-
-
-
-## Acesso ao Projeto
-Você pode acessar o projeto funcionando através do seguinte link: [Nome do Projeto - GitHub Pages] (https://seuusuario.github.io/nomedoprojeto/)
 
 
 
