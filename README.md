@@ -34,7 +34,7 @@ O projeto está **Concluído**.
 - HTML
 - CSS
 - Bootstrap
-- Figma (para prototipagem)
+- Figma
 
 
 
