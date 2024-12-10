@@ -18,7 +18,7 @@ O projeto está **Concluído**.
 
 ## Capturas de Tela
 
-![Imagens do projeto] (hamburgueria/hamburgueria.png)
+![Imagens do projeto] (https://github.com/adri-ramos25/hamburgueria/blob/main/hamburgueria.png?raw=true)
 
 
 
