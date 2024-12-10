@@ -69,5 +69,5 @@ index.html                 # Página inicial
 ## Autor
 
 - **Adriano Ramos**
-- [LinkedIn] (https://linkedin.com/in/https://www.linkedin.com/in/adriano-ramos-883026310/)
+- [LinkedIn] (www.linkedin.com/in/adriano-ramos25)
 - [Instagram] (https://www.instagram.com/adriano.ramos9/)
