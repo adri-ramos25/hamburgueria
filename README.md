@@ -66,7 +66,7 @@ index.html                 # Página inicial
 
 
 
-## Autor
+## Desenvolvedor
 
 - **Adriano Ramos**
 - LinkedIn: www.linkedin.com/in/adriano-ramos25
