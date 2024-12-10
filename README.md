@@ -18,7 +18,7 @@ O projeto está **Concluído**.
 
 ## Capturas de Tela
 
-![Imagens do projeto] (src/images/hamburgueria.png)
+![Imagens do projeto] (/src/images/hamburgueria.png)
 
 
 
