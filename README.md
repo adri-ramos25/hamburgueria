@@ -52,9 +52,10 @@ src/
       products.js          # Lógica relacionada aos produtos
       removal-products.js  # Lógica para remoção dos produtos dos pedidos
       requests.js          # Lógica relacionada aos pedidos
-credits.html               # Página dos créditos das imagens
-screenshot.png             # Screenshot do projeto
+README.md                  # Informações do projeto
+credits.html               # Página dos créditos das imagens utilizadas no projeto
 index.html                 # Página inicial
+screenshot.png             # Screenshot do projeto
 ```
 
 
