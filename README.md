@@ -1,6 +1,6 @@
 ## Hamburgueria
 
-![Imagens do projeto](https://github.com/adri-ramos25/hamburgueria/raw/main/hamburgueria.png)
+![Imagens do projeto](https://github.com/adri-ramos25/hamburgueria/raw/main/screenshot.png)
 
 
 
