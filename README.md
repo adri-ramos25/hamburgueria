@@ -41,13 +41,13 @@ O projeto está **Concluído**.
 ## Estrutura de Pastas
 
 ```plaintext
-src/
-   css/
+src/                       # Pasta com o código-fonte do projeto
+   css/                    # Pasta com arquivos CSS
       credits.css          # Estilos da página de créditos das imagens
       features.css         # Estilos relacionados às funcionalidades
       index.css            # Estilos principais da página inicial
       responsive.css       # Estilos para design responsivo
-   js/
+   js/                     # Pasta com arquivos JavaScript
       addition-products.js # Lógica para adição de produtos aos pedidos
       products.js          # Lógica relacionada aos produtos
       removal-products.js  # Lógica para remoção dos produtos dos pedidos
