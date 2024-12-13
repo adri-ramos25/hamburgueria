@@ -24,8 +24,8 @@ O projeto está **Concluído**.
 ## Funcionalidades
 
 ```plaintext
-- Adição de produtos do cardápio aos pedidos             # Permite a adição de produtos do cardápio aos pedidos 
-- Remoção de produtos que foram adicionados aos pedidos  # Permite a remoção de produtos que foram adicionados aos pedidos
+- Adição de produtos do cardápio aos pedidos            # Permite a adição de produtos do cardápio aos pedidos 
+- Remoção de produtos que foram adicionados aos pedidos # Permite a remoção de produtos que foram adicionados aos pedidos
 ```
 
 
@@ -33,11 +33,11 @@ O projeto está **Concluído**.
 ## Tecnologias Utilizadas
 
 ```plaintext
-- JavaScript   # Para criar a lógica de adição e remoção de produtos dos pedidos
-- HTML         # Para criar a estrutura da página principal e de créditos
-- CSS          # Para dar estilo à página principal e de créditos 
-- Bootstrap    # Para adicionar ícones ao rodapé do site
-- Figma        # Para criar o design do site
+- JavaScript # Para criar a lógica de adição e remoção de produtos dos pedidos
+- HTML       # Para criar a estrutura da página principal e de créditos
+- CSS        # Para dar estilo à página principal e de créditos 
+- Bootstrap  # Para adicionar ícones ao rodapé do site
+- Figma      # Para criar o design do site
 ```
 
 
