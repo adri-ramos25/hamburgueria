@@ -68,11 +68,3 @@ screenshot.png               # Screenshot do projeto
 
 1. Clone o repositório: `git clone https://github.com/adri-ramos25/hamburgueria.git`
 2. Abra o arquivo `index.html` no navegador.
-
-
-
-## Desenvolvedor
-
-- **Adriano Ramos**
-- LinkedIn: https://www.linkedin.com/in/adriano-ramos25
-- Instagram: https://www.instagram.com/adriano.ramos25/
