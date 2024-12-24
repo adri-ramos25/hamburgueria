@@ -1,6 +1,6 @@
 ## Hamburgueria
 
-![Imagens do projeto](https://github.com/adri-ramos25/hamburgueria/raw/main/hamburgueria.png)
+![Imagens do projeto](https://github.com/adri-ramos25/hamburgueria/raw/main/screenshot.png)
 
 
 
@@ -24,8 +24,10 @@ O projeto está **Concluído**.
 
 ## Funcionalidades
 
+```plaintext
 - Adição de produtos do cardápio aos pedidos              # Permite a adição de produtos do cardápio aos pedidos 
 - Remoção de produtos que foram adicionados aos pedidos   # Permite a remoção de produtos que foram adicionados aos pedidos
+```
 
 
 
