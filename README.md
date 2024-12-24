@@ -33,11 +33,13 @@ O projeto está **Concluído**.
 
 ## Tecnologias Utilizadas
 
+```plaintext
 - JavaScript   # Para criar a lógica de adição e remoção de produtos dos pedidos
 - HTML         # Para criar a estrutura da página principal e de créditos
 - CSS          # Para dar estilo à página principal e de créditos 
 - Bootstrap    # Para adicionar ícones ao rodapé do site
 - Figma        # Para criar o layout do site
+```
 
 
 
