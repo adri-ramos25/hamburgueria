@@ -5,7 +5,6 @@ const btnBackRequests = document.getElementById("btn-back-requests");
 
 btnShowRequests.addEventListener("click", () => {
     document.getElementById("box-requests").style.display = "block";
-
     addToRequests();
 })
 

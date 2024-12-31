@@ -37,8 +37,8 @@
         right: 67px;
     }
 
-    #box-orange-juice, #box-lemon-juice, #box-pineapple-juice{
-        height: 120px;
+    #box-classic-burguer, #box-vegetarian-burguer, #box-bacon-burguer, #box-fanta{
+        height: 115px;
     }
 
     #btn-classic-burguer, #btn-vegetarian-burguer, #btn-bacon-burguer, #btn-coca-cola, #btn-fanta,  #btn-sprite, #btn-orange-juice, #btn-lemon-juice, #btn-pineapple-juice{

@@ -11,54 +11,45 @@ const btnRemoveOrderPineappleJuice = document.getElementById("btn-remove-order-p
 
 btnRemoveOrderClassicBurguer.addEventListener("click", () => {
     document.getElementById("box-classic-burguer").style.display = "none";
-
     addedProduct = "";
 })
 
 btnRemoveOrderVegetarianBurguer.addEventListener("click", () => {
     document.getElementById("box-vegetarian-burguer").style.display = "none";
-
     addedProduct = "";
 })
 
 btnRemoveOrderBaconBurguer.addEventListener("click", () => {
     document.getElementById("box-bacon-burguer").style.display = "none";
-
     addedProduct = "";
 })
 
 btnRemoveOrderCocaCola.addEventListener("click", () => {
     document.getElementById("box-coca-cola").style.display = "none";
-
     addedProduct = "";
 })
 
 btnRemoveOrderFanta.addEventListener("click", () => {
     document.getElementById("box-fanta").style.display = "none";
-
     addedProduct = "";
 })
 
 btnRemoveOrderSprite.addEventListener("click", () => {
     document.getElementById("box-sprite").style.display = "none";
-
     addedProduct = "";
 })
 
 btnRemoveOrderOrangeJuice.addEventListener("click", () => {
     document.getElementById("box-orange-juice").style.display = "none";
-
     addedProduct = "";
 })
 
 btnRemoveOrderLemonJuice.addEventListener("click", () => {
     document.getElementById("box-lemon-juice").style.display = "none";
-
     addedProduct = "";
 })
 
-btnRemoveOrderSprite.addEventListener("click", () => {
+btnRemoveOrderPineappleJuice.addEventListener("click", () => {
     document.getElementById("box-pineapple-juice").style.display = "none";
-
     addedProduct = "";
 })

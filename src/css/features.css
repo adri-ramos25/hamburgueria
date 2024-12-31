@@ -60,11 +60,11 @@
     position: relative;
     bottom: 45px;
     width: 80px;
-    height: 25px;
+    height: 20px;
     background-color: rgb(190, 29, 29);
     border-radius: 20px;
     font-size: 10px;
-    margin-top: 0;
+    margin-top: 10px;
     color: rgb(255, 223, 141);
     transition: 0.2s ease;
 }
@@ -203,6 +203,10 @@
 /* Margem entre essas caixinhas */
 #box-classic-burguer, #box-vegetarian-burguer, #box-bacon-burguer, #box-coca-cola, #box-fanta, #box-sprite, #box-orange-juice, #box-lemon-juice, #box-pineapple-juice{
     margin: 17px;
+}
+
+#box-orange-juice, #box-lemon-juice, #box-pineapple-juice{
+    height: 130px;
 }
 
 /* Posicao dessas caixinhas */
