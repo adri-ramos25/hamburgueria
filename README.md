@@ -1,6 +1,6 @@
 ## Hamburgueria
 
-![Imagens do projeto](https://github.com/adri-ramos25/hamburgueria/raw/main/screenshot.png)
+![Imagens do projeto](https://github.com/adri-ramos25/hamburgueria/raw/main/src/images/screenshot.png)
 
 
 
@@ -18,7 +18,7 @@ Você pode acessar o projeto funcionando através do seguinte link: https://adri
 
 ## Status do Projeto
 
-O projeto está **Concluído**, mas alguns ajustes ainda podem ser feitos nele.
+O projeto está **Concluído**, mas eu ainda estou fazendo alguns ajustes e melhorias nele.
 
 
 
