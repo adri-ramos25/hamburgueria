@@ -1,43 +1,39 @@
 body{
-    background-color: rgb(51, 15, 3);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background-color: #330F03;
     font-family: sans-serif;
+    color: #F89147;
+    text-align: center;
+    font-weight: bold;
 }
 
-h1{
-    font-family: sans-serif;
-    color: rgb(248, 145, 71);
-    margin-top: 30px;
+header{
+    padding: 50px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
 }
 
 a{
     margin: 10px;
-    font-family: sans-serif;
-    font-weight: bold;
-    color: rgb(248, 145, 71);
+    text-align: left;
+}
+
+footer{
+    background-color: #000;
+    color: #1978E5;
 }
 
 
 
 .box-links{
-    background-color: rgb(107, 33, 0);
     display: flex;
     flex-direction: column;
+    background-color: #6B2100;
+    width: 25em;
+    border: 5px solid #F89147;
     border-radius: 20px;
-    margin-top: 20px;
-    margin-bottom: 60px;
-    border: 5px solid rgb(248, 145, 71);
-    border-radius: 20px;
+    margin-bottom: 50px;
     padding: 20px 20px;
-}
-
-.developer-name{
-    width: 270px;
-    margin-bottom: 30px;
-    color: rgb(40, 115, 255);
-    font-weight: bold;
-    text-align: center;
 }

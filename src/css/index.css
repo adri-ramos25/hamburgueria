@@ -14,7 +14,7 @@ ul{
 }
 
 a{
-    color: rgb(248, 145, 71);
+    color: #f89147;
 }
 
 li{
@@ -40,9 +40,9 @@ button{
     justify-content: center;
     align-items: center;
     padding: 80px;
-    background-color: rgb(51, 15, 3);
+    background-color: #330f03;
     text-align: center;
-    color: rgb(232, 30, 54);
+    color: #e81e36;
 }
 
 .logo-burguer-joint{
@@ -60,8 +60,8 @@ button{
 
 .box-navigation-section{
     text-align: center;
-    background-color: rgb(107, 33, 0);
-    color: rgb(248, 145, 71);
+    background-color: #6b2100;
+    color: #f89147;
     padding-top: 80px;
     padding-bottom: 80px;
 }
@@ -74,7 +74,7 @@ button{
     width: 15em;
     margin-right: auto;
     margin-left: auto;
-    border: 5px solid rgb(248, 145, 71);
+    border: 5px solid #f89147;
     border-radius: 20px;
     padding-top: 20px;
     padding-bottom: 8px;
@@ -96,9 +96,9 @@ button{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(248, 145, 71);
+    background-color: #f89147;
     text-align: center;
-    color: rgb(107, 33, 0);
+    color: #6b2100;
 }
 
 .title-menu-section{
@@ -116,36 +116,34 @@ button{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    border: 5px solid rgb(107, 33, 0);
+    border: 5px solid #6b2100;
     border-radius: 20px;
     margin: 30px;
     padding: 10px 10px;
 }
 
 /* Faz os botoes dos produtos ficarem alinhados */ 
-.btns-products{
+.btn-product{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(170, 54, 19);
+    background-color: #aa3613;
     margin-top: 10px;
     font-size: 12px;
-    border: 5px solid rgb(107, 33, 0);
+    border: 5px solid #6b2100;
     border-radius: 20px;
     text-align: center;
-    color: rgb(255, 207, 87);
+    color: #ffcf57;
     transition: 0.2s ease;
 }
 
-.btns-products:hover{
-    background-color: rgb(232, 30, 54);
+.btn-product:hover{
+    background-color: #e81e36;
 }
 
 .align-btns-products{
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
-    justify-content: space-around;
 }
 
 .margin-btns-products{
@@ -165,63 +163,20 @@ button{
     margin: auto;
 }
 
-/* Imagens dos hamburgueres */
 
-.image-btn-classic-burguer{
-    width: 5em;
-    margin-top: 30px;
-    margin-bottom: 20px;
-}
 
-.image-btn-vegetarian-burguer{
-    width: 4.5em;
-    margin-top: 26px;
-    margin-bottom: 20px;
-}
 
-.image-btn-bacon-burguer{
-    width: 4.5em;
-    margin-top: 24px;
-    margin-bottom: 20px;
-}
+/* Imagens dos produtos */
 
-/* Imagens dos refrigerantes */
-
-.image-btn-coca-cola{
-    width: 2em;
-    margin-top: 30px;
-    margin-bottom: 20px;
-}
-
-.image-btn-fanta{
-    width: 2.5em;
-    margin-top: 35px;
-    margin-bottom: 20px;
-}
-
-.image-btn-sprite{
-    width: 2.7em;
-    margin-top: 42px;
-    margin-bottom: 20px;
-}
-
-/* Imagens dos sucos */
-
-.image-btn-orange-juice{
+.image-btn-classic-burguer, .image-btn-vegetarian-burguer, .image-btn-bacon-burguer, .image-btn-coca-cola, .image-btn-fanta, .image-btn-sprite, .image-btn-orange-juice, .image-btn-lemon-juice, .image-btn-pineapple-juice{
     width: 3em;
     margin-top: 15px;
     margin-bottom: 20px;
 }
 
-.image-btn-lemon-juice{
-    width: 2.5em;
-    margin-top: 35px;
-    margin-bottom: 20px;
-}
-
-.image-btn-pineapple-juice{
-    width: 1.5em;
-    margin-top: 32px;
+.image-selected-product, .image-selected-product, .image-selected-product, .image-selected-product, .image-selected-product, .image-selected-product, .image-selected-product, .image-selected-product, .image-selected-product{
+    width: 3em;
+    margin-top: 15px;
     margin-bottom: 20px;
 }
 
@@ -230,17 +185,17 @@ button{
 /* Secao 4 (sobre nos) */
 
 .box-about-us-section{
-    background-color: rgb(251, 177, 97);
+    background-color: #fbb161;
     padding-top: 80px;
     padding-bottom: 80px;
     text-align: center;
-    color: rgb(51, 15, 3);
+    color: #330f03;
 }
 
 .border-about-us-section{
     width: 15em;
     margin: auto;
-    border: 5px solid rgb(51, 15, 3);
+    border: 5px solid #330f03;
     border-radius: 20px;
     padding: 20px;
 }
@@ -258,9 +213,9 @@ button{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(170, 54, 19);
+    background-color: #aa3613;
     text-align: center;
-    color: rgb(51, 15, 3);
+    color: #330f03;
 }
 
 .title-testimonials-section{
@@ -275,13 +230,13 @@ button{
 .photos-styles{
     height: 5em;
     width: 5em;
-    border: 5px solid rgb(51, 15, 3);
+    border: 5px solid #330f03;
     border-radius: 50%;
     margin-top: 20px;
 }
 
 .box-testimony-1{
-    border: 5px solid rgb(51, 15, 3);
+    border: 5px solid #330f03;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -293,7 +248,7 @@ button{
 }
 
 .box-testimony-2{
-    border: 5px solid rgb(51, 15, 3);
+    border: 5px solid #330f03;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -317,9 +272,9 @@ button{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(51, 15, 3);
+    background-color: #330f03;
     text-align: center;
-    color: rgb(232, 30, 54);
+    color: #e81e36;
 }
 
 .logo-burguer-joint-footer-section{
@@ -332,7 +287,7 @@ button{
     margin-bottom: 10px;
     width: 320px;
     font-size: 20px;
-    color: rgb(232, 30, 54);
+    color: #e81e36;
 }
 
 .box-contacts{
@@ -342,7 +297,7 @@ button{
     align-items: center;
     width: 20em;
     margin-bottom: 80px;
-    color: rgb(248, 145, 71);
+    color: #f89147;
     font-size: 17px;
 }
 
@@ -353,7 +308,7 @@ button{
 }
 
 .title-follow-us-instagram{
-    color: rgb(232, 30, 54);
+    color: #e81e36;
     width: 270px;
     margin-top: 70px;
     margin-bottom: 10px;
@@ -374,15 +329,20 @@ button{
 }
 
 .box-credits-links{
-    width: 25em;
-    margin-bottom: 80px;
+    width: 28em;
+    margin-bottom: 50px;
     font-size: 14px;
+    text-align: center;
+}
+
+.box-developer-name{
+    display: flex;
+    justify-content: center;
+    padding: 20px 20px;
+    color: #fff;
+    margin-bottom: 20px;
 }
 
 .developer-name{
-    width: 270px;
-    margin-bottom: 30px;
-    color: rgb(40, 115, 255);
-    font-weight: bold;
-    text-align: center;
+    color: #1978e5;
 }

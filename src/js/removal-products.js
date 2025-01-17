@@ -1,55 +1,146 @@
-const btnRemoveOrderClassicBurguer = document.getElementById("btn-remove-order-classic-burguer");
-const btnRemoveOrderVegetarianBurguer = document.getElementById("btn-remove-order-vegetarian-burguer");
-const btnRemoveOrderBaconBurguer = document.getElementById("btn-remove-order-bacon-burguer");
-const btnRemoveOrderCocaCola = document.getElementById("btn-remove-order-coca-cola");
-const btnRemoveOrderFanta = document.getElementById("btn-remove-order-fanta");
-const btnRemoveOrderSprite = document.getElementById("btn-remove-order-sprite");
-const btnRemoveOrderOrangeJuice = document.getElementById("btn-remove-order-orange-juice");
-const btnRemoveOrderLemonJuice = document.getElementById("btn-remove-order-lemon-juice");
-const btnRemoveOrderPineappleJuice = document.getElementById("btn-remove-order-pineapple-juice");
+const btnRemoveOrder = document.getElementsByClassName("btn-remove-order");
 
+// Hamburguer classico
+btnRemoveOrder[0].addEventListener("click", () => { 
+    valueClassicBurguer = 0;
 
-btnRemoveOrderClassicBurguer.addEventListener("click", () => {
-    document.getElementById("box-classic-burguer").style.display = "none";
-    addedProduct = "";
+    quantityAddedProducts -= 1;
+
+    verifyOrderClassicBurguer -= 1;
+
+    boxAddedProduct[0].style.display = "none";
+
+    quantitiesClassicBurguer = 0;
+
+    numProductsAdded();
 })
 
-btnRemoveOrderVegetarianBurguer.addEventListener("click", () => {
-    document.getElementById("box-vegetarian-burguer").style.display = "none";
-    addedProduct = "";
+// Hamburguer vegetariano
+btnRemoveOrder[1].addEventListener("click", () => { 
+    valueVegetarianBurguer = 0;
+
+    quantityAddedProducts -= 1;
+
+    verifyOrderVegetarianBurguer -= 1;
+
+    boxAddedProduct[1].style.display = "none";
+
+    quantitiesVegetarianBurguer = 0;
+
+    numProductsAdded();
 })
 
-btnRemoveOrderBaconBurguer.addEventListener("click", () => {
-    document.getElementById("box-bacon-burguer").style.display = "none";
-    addedProduct = "";
+// Hamburguer bbq bacon
+btnRemoveOrder[2].addEventListener("click", () => { 
+    valueBaconBurguer = 0;
+
+    quantityAddedProducts -= 1;
+
+    verifyOrderBaconBurguer -= 1;
+
+    boxAddedProduct[2].style.display = "none";
+
+    quantitiesBaconBurguer = 0;
+
+    numProductsAdded();
 })
 
-btnRemoveOrderCocaCola.addEventListener("click", () => {
-    document.getElementById("box-coca-cola").style.display = "none";
-    addedProduct = "";
+// Coca cola
+btnRemoveOrder[3].addEventListener("click", () => {
+    valueCocaCola = 0;
+ 
+    quantityAddedProducts -= 1;
+
+    verifyOrderCocaCola -= 1;
+
+    boxAddedProduct[3].style.display = "none";
+
+    quantitiesCocaCola = 0;
+
+    numProductsAdded();
 })
 
-btnRemoveOrderFanta.addEventListener("click", () => {
-    document.getElementById("box-fanta").style.display = "none";
-    addedProduct = "";
+// Fanta
+btnRemoveOrder[4].addEventListener("click", () => { 
+    valueFanta = 0;
+
+    quantityAddedProducts -= 1;
+
+    verifyOrderFanta -= 1;
+
+    boxAddedProduct[4].style.display = "none";
+
+    quantitiesFanta = 0;
+
+    numProductsAdded();
 })
 
-btnRemoveOrderSprite.addEventListener("click", () => {
-    document.getElementById("box-sprite").style.display = "none";
-    addedProduct = "";
+// Sprite
+btnRemoveOrder[5].addEventListener("click", () => { 
+    valueSprite = 0;
+
+    quantityAddedProducts -= 1;
+
+    verifyOrderSprite -= 1;
+
+    boxAddedProduct[5].style.display = "none";
+
+    quantitiesSprite = 0;
+
+    numProductsAdded();
 })
 
-btnRemoveOrderOrangeJuice.addEventListener("click", () => {
-    document.getElementById("box-orange-juice").style.display = "none";
-    addedProduct = "";
+// Suco de laranja
+btnRemoveOrder[6].addEventListener("click", () => { 
+    valueOrangeJuice = 0;
+
+    quantityAddedProducts -= 1;
+
+    verifyOrderOrangeJuice -= 1;
+
+    boxAddedProduct[6].style.display = "none";
+
+    quantitiesOrangeJuice = 0;
+
+    numProductsAdded();
 })
 
-btnRemoveOrderLemonJuice.addEventListener("click", () => {
-    document.getElementById("box-lemon-juice").style.display = "none";
-    addedProduct = "";
+// Suco de limao
+btnRemoveOrder[7].addEventListener("click", () => { 
+    valueLemonJuice = 0;
+
+    quantityAddedProducts -= 1;
+
+    verifyOrderLemonJuice -= 1;
+
+    boxAddedProduct[7].style.display = "none";
+
+    quantitiesLemonJuice = 0;
+
+    numProductsAdded();
 })
 
-btnRemoveOrderPineappleJuice.addEventListener("click", () => {
-    document.getElementById("box-pineapple-juice").style.display = "none";
-    addedProduct = "";
+// Suco de abacaxi
+btnRemoveOrder[8].addEventListener("click", () => { 
+    valuePineappleJuice = 0;
+
+    quantityAddedProducts -= 1;
+
+    verifyOrderPineappleJuice -= 1;
+
+    boxAddedProduct[8].style.display = "none";
+
+    quantitiesPineappleJuice = 0;
+
+    numProductsAdded();
 })
+
+
+
+
+function numProductsAdded() {
+    if (quantityAddedProducts <= 0) {
+        boxOrders.style.display = "none";
+        btnShowOrders.style.display = "none";
+    }
+}

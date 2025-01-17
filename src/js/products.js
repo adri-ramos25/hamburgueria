@@ -1,252 +1,277 @@
-const btnClassicBurguer = document.getElementById("btn-classic-burguer");
-const btnVegetarianBurguer = document.getElementById("btn-vegetarian-burguer");
-const btnBaconBurguer = document.getElementById("btn-bacon-burguer");
-const btnCocaCola = document.getElementById("btn-coca-cola");
-const btnFanta = document.getElementById("btn-fanta");
-const btnSprite = document.getElementById("btn-sprite");
-const btnOrangeJuice = document.getElementById("btn-orange-juice");
-const btnLemonJuice = document.getElementById("btn-lemon-juice");
-const btnPineappleJuice = document.getElementById("btn-pineapple-juice");
-const btnBackBoxSelectedProduct = document.getElementById("btn-back-box-selected-product");
+const btnProduct = document.getElementsByClassName("btn-product");
 
+// Caixa que mostra o produto selecionado
+const boxSelectedProduct = document.getElementById("box-selected-product");
+
+// Imagem do produto selecionado
+const imageSelectedProduct = document.getElementsByClassName("image-selected-product");
+
+// Nome do produto selecionado
+const nameSelectedProduct = document.getElementsByClassName("name-selected-product");
+
+const btnBackSelectedProduct = document.getElementById("btn-back-selected-product");
+
+// Produto selecionado pelo usuario
 let selectedProduct = "";
 
 
-btnClassicBurguer.addEventListener("click", () => {
-    hideBtnAddProduct();
+// Esconde todas as imagens dos produtos da caixa dos produtos selecionados
+imageSelectedProduct[0].style.display = "none";
+imageSelectedProduct[1].style.display = "none";
+imageSelectedProduct[2].style.display = "none";
+imageSelectedProduct[3].style.display = "none";
+imageSelectedProduct[4].style.display = "none";
+imageSelectedProduct[5].style.display = "none";
+imageSelectedProduct[6].style.display = "none";
+imageSelectedProduct[7].style.display = "none";
+imageSelectedProduct[8].style.display = "none";
 
+// Esconde todos os nomes dos produtos da caixa dos produtos selecionados
+nameSelectedProduct[0].style.display = "none";
+nameSelectedProduct[1].style.display = "none";
+nameSelectedProduct[2].style.display = "none";
+nameSelectedProduct[3].style.display = "none";
+nameSelectedProduct[4].style.display = "none";
+nameSelectedProduct[5].style.display = "none";
+nameSelectedProduct[6].style.display = "none";
+nameSelectedProduct[7].style.display = "none";
+nameSelectedProduct[8].style.display = "none";
+
+
+
+
+// Hamburguer classico
+btnProduct[0].addEventListener("click", () => {
     selectedProduct = "hamburguer classico";
 
-    document.getElementById("box-selected-product").style.display = "block";
+    showBoxSelectedProduct();
 
-    document.getElementById("box-selected-product").style.display = "flex";
+    imageSelectedProduct[0].style.display = "block";
+    nameSelectedProduct[0].style.display = "block";
+    btnAddSelectedProduct[0].style.display = "block";
 
-    document.getElementById("image-selected-classic-burguer").style.display = "block";
-
-    document.getElementById("name-classic-burguer").style.display = "block";
-
-    btnShowRequests.style.display = "none";
-
-    showBtnAddSelectedProduct();
+    btnAddSelectedProduct[1].style.display = "none";
+    btnAddSelectedProduct[2].style.display = "none";
+    btnAddSelectedProduct[3].style.display = "none";
+    btnAddSelectedProduct[4].style.display = "none";
+    btnAddSelectedProduct[5].style.display = "none";
+    btnAddSelectedProduct[6].style.display = "none";
+    btnAddSelectedProduct[7].style.display = "none";
+    btnAddSelectedProduct[8].style.display = "none";
 })
 
-btnVegetarianBurguer.addEventListener("click", () => {
-    hideBtnAddProduct();
 
+// Hamburguer vegetariano
+btnProduct[1].addEventListener("click", () => {
     selectedProduct = "hamburguer vegetariano";
 
-    document.getElementById("box-selected-product").style.display = "block";
+    showBoxSelectedProduct();
 
-    document.getElementById("box-selected-product").style.display = "flex";
+    imageSelectedProduct[1].style.display = "block";
+    nameSelectedProduct[1].style.display = "block";
+    btnAddSelectedProduct[1].style.display = "block";
 
-    document.getElementById("image-selected-vegetarian-burguer").style.display = "block";
-
-    document.getElementById("name-vegetarian-burguer").style.display = "block";
-
-    btnShowRequests.style.display = "none";
-
-    showBtnAddSelectedProduct();
+    btnAddSelectedProduct[0].style.display = "none";
+    btnAddSelectedProduct[2].style.display = "none";
+    btnAddSelectedProduct[3].style.display = "none";
+    btnAddSelectedProduct[4].style.display = "none";
+    btnAddSelectedProduct[5].style.display = "none";
+    btnAddSelectedProduct[6].style.display = "none";
+    btnAddSelectedProduct[7].style.display = "none";
+    btnAddSelectedProduct[8].style.display = "none";
 })
 
-btnBaconBurguer.addEventListener("click", () => {
-    hideBtnAddProduct();
 
-    selectedProduct = "hamburguer bbq bacon";
+// Hamburguer bbq bacon
+btnProduct[2].addEventListener("click", () => {
+    selectedProduct = "hamburguer bacon";
 
-    document.getElementById("box-selected-product").style.display = "block";
+    showBoxSelectedProduct();
 
-    document.getElementById("box-selected-product").style.display = "flex";
+    imageSelectedProduct[2].style.display = "block";
+    nameSelectedProduct[2].style.display = "block";
+    btnAddSelectedProduct[2].style.display = "block";
 
-    document.getElementById("image-selected-bacon-burguer").style.display = "block";
-
-    document.getElementById("name-bacon-burguer").style.display = "block";
-
-    btnShowRequests.style.display = "none";
-
-    showBtnAddSelectedProduct();
+    btnAddSelectedProduct[0].style.display = "none";
+    btnAddSelectedProduct[1].style.display = "none";
+    btnAddSelectedProduct[3].style.display = "none";
+    btnAddSelectedProduct[4].style.display = "none";
+    btnAddSelectedProduct[5].style.display = "none";
+    btnAddSelectedProduct[6].style.display = "none";
+    btnAddSelectedProduct[7].style.display = "none";
+    btnAddSelectedProduct[8].style.display = "none";
 })
 
-btnCocaCola.addEventListener("click", () => {
-    hideBtnAddProduct();
 
-    selectedProduct = "coca-cola";
+// Coca-cola
+btnProduct[3].addEventListener("click", () => {
+    selectedProduct = "coca";
 
-    document.getElementById("box-selected-product").style.display = "block";
+    showBoxSelectedProduct();
 
-    document.getElementById("box-selected-product").style.display = "flex";
+    imageSelectedProduct[3].style.display = "block";
+    nameSelectedProduct[3].style.display = "block";
+    btnAddSelectedProduct[3].style.display = "block";
 
-    document.getElementById("image-selected-coca-cola").style.display = "block";
-
-    document.getElementById("name-coca-cola").style.display = "block";
-
-    btnShowRequests.style.display = "none";
-
-    showBtnAddSelectedProduct();
+    btnAddSelectedProduct[0].style.display = "none";
+    btnAddSelectedProduct[1].style.display = "none";
+    btnAddSelectedProduct[2].style.display = "none";
+    btnAddSelectedProduct[4].style.display = "none";
+    btnAddSelectedProduct[5].style.display = "none";
+    btnAddSelectedProduct[6].style.display = "none";
+    btnAddSelectedProduct[7].style.display = "none";
+    btnAddSelectedProduct[8].style.display = "none";
 })
 
-btnFanta.addEventListener("click", () => {
-    hideBtnAddProduct();
 
+// Fanta
+btnProduct[4].addEventListener("click", () => {
     selectedProduct = "fanta";
 
-    document.getElementById("box-selected-product").style.display = "block";
+    showBoxSelectedProduct();
 
-    document.getElementById("box-selected-product").style.display = "flex";
+    imageSelectedProduct[4].style.display = "block";
+    nameSelectedProduct[4].style.display = "block";
+    btnAddSelectedProduct[4].style.display = "block";
 
-    document.getElementById("image-selected-fanta").style.display = "block";
-
-    document.getElementById("name-fanta").style.display = "block";
-
-    btnShowRequests.style.display = "none";
-
-    showBtnAddSelectedProduct();
+    btnAddSelectedProduct[0].style.display = "none";
+    btnAddSelectedProduct[1].style.display = "none";
+    btnAddSelectedProduct[2].style.display = "none";
+    btnAddSelectedProduct[3].style.display = "none";
+    btnAddSelectedProduct[5].style.display = "none";
+    btnAddSelectedProduct[6].style.display = "none";
+    btnAddSelectedProduct[7].style.display = "none";
+    btnAddSelectedProduct[8].style.display = "none";
 })
 
-btnSprite.addEventListener("click", () => {
-    hideBtnAddProduct();
 
+// Sprite
+btnProduct[5].addEventListener("click", () => {
     selectedProduct = "sprite";
 
-    document.getElementById("box-selected-product").style.display = "block";
+    showBoxSelectedProduct();
 
-    document.getElementById("box-selected-product").style.display = "flex";
+    imageSelectedProduct[5].style.display = "block";
+    nameSelectedProduct[5].style.display = "block";
+    btnAddSelectedProduct[5].style.display = "block";
 
-    document.getElementById("image-selected-sprite").style.display = "block";
-
-    document.getElementById("name-sprite").style.display = "block";
-
-    btnShowRequests.style.display = "none";
-
-    showBtnAddSelectedProduct();
+    btnAddSelectedProduct[0].style.display = "none";
+    btnAddSelectedProduct[1].style.display = "none";
+    btnAddSelectedProduct[2].style.display = "none";
+    btnAddSelectedProduct[3].style.display = "none";
+    btnAddSelectedProduct[4].style.display = "none";
+    btnAddSelectedProduct[6].style.display = "none";
+    btnAddSelectedProduct[7].style.display = "none";
+    btnAddSelectedProduct[8].style.display = "none";
 })
 
-btnOrangeJuice.addEventListener("click", () => {
-    hideBtnAddProduct();
 
+// Suco de laranja
+btnProduct[6].addEventListener("click", () => {
     selectedProduct = "suco de laranja";
 
-    document.getElementById("box-selected-product").style.display = "block";
+    showBoxSelectedProduct();
 
-    document.getElementById("box-selected-product").style.display = "flex";
+    imageSelectedProduct[6].style.display = "block";
+    nameSelectedProduct[6].style.display = "block";
+    btnAddSelectedProduct[6].style.display = "block";
 
-    document.getElementById("image-selected-orange-juice").style.display = "block";
-
-    document.getElementById("name-orange-juice").style.display = "block";
-
-    btnShowRequests.style.display = "none";
-
-    showBtnAddSelectedProduct();
+    btnAddSelectedProduct[0].style.display = "none";
+    btnAddSelectedProduct[1].style.display = "none";
+    btnAddSelectedProduct[2].style.display = "none";
+    btnAddSelectedProduct[4].style.display = "none";
+    btnAddSelectedProduct[3].style.display = "none";
+    btnAddSelectedProduct[4].style.display = "none";
+    btnAddSelectedProduct[5].style.display = "none";
+    btnAddSelectedProduct[7].style.display = "none";
+    btnAddSelectedProduct[8].style.display = "none";
 })
 
-btnLemonJuice.addEventListener("click", () => {
-    hideBtnAddProduct();
 
-    selectedProduct = "suco de limão";
+// Suco de limao
+btnProduct[7].addEventListener("click", () => {
+    selectedProduct = "suco de limao";
 
-    document.getElementById("box-selected-product").style.display = "block";
+    showBoxSelectedProduct();
 
-    document.getElementById("box-selected-product").style.display = "flex";
+    imageSelectedProduct[7].style.display = "block";
+    nameSelectedProduct[7].style.display = "block";
+    btnAddSelectedProduct[7].style.display = "block";
 
-    document.getElementById("image-selected-lemon-juice").style.display = "block";
-
-    document.getElementById("name-lemon-juice").style.display = "block";
-
-    btnShowRequests.style.display = "none";
-
-    showBtnAddSelectedProduct();
+    btnAddSelectedProduct[0].style.display = "none";
+    btnAddSelectedProduct[1].style.display = "none";
+    btnAddSelectedProduct[2].style.display = "none";
+    btnAddSelectedProduct[3].style.display = "none";
+    btnAddSelectedProduct[4].style.display = "none";
+    btnAddSelectedProduct[5].style.display = "none";
+    btnAddSelectedProduct[6].style.display = "none";
+    btnAddSelectedProduct[8].style.display = "none";
 })
 
-btnPineappleJuice.addEventListener("click", () => {
-    hideBtnAddProduct();
 
+// Suco de abacaxi
+btnProduct[8].addEventListener("click", () => {
     selectedProduct = "suco de abacaxi";
 
-    document.getElementById("box-selected-product").style.display = "block";
+    showBoxSelectedProduct();
 
-    document.getElementById("box-selected-product").style.display = "flex";
+    imageSelectedProduct[8].style.display = "block";
+    nameSelectedProduct[8].style.display = "block";
+    btnAddSelectedProduct[8].style.display = "block";
 
-    document.getElementById("image-selected-pineapple-juice").style.display = "block";
-
-    document.getElementById("name-pineapple-juice").style.display = "block";
-
-    btnShowRequests.style.display = "none";
-
-    showBtnAddSelectedProduct();
+    btnAddSelectedProduct[0].style.display = "none";
+    btnAddSelectedProduct[1].style.display = "none";
+    btnAddSelectedProduct[2].style.display = "none";
+    btnAddSelectedProduct[3].style.display = "none";
+    btnAddSelectedProduct[4].style.display = "none";
+    btnAddSelectedProduct[5].style.display = "none";
+    btnAddSelectedProduct[6].style.display = "none";
+    btnAddSelectedProduct[7].style.display = "none";
 })
 
-btnBackBoxSelectedProduct.addEventListener("click", () => {
-    if (addedProduct == "") {
-        btnShowRequests.style.display = "none";
-    } else {
-        btnShowRequests.style.display = "block";
-    }
 
-    document.getElementById("box-selected-product").style.display = "none";
+
+
+
+btnBackSelectedProduct.addEventListener("click", () => {
+    boxSelectedProduct.style.display = "none";
+
+    if (quantitiesClassicBurguer>=1 || quantitiesVegetarianBurguer>=1 || quantitiesBaconBurguer>=1 || quantitiesCocaCola>=1 || quantitiesFanta>=1 || quantitiesSprite>=1 || quantitiesOrangeJuice>=1 || quantitiesLemonJuice>=1 || quantitiesPineappleJuice>=1) {
+        btnShowOrders.style.display = "block";
+    } else {
+        btnShowOrders.style.display = "none";
+    }
 
     // Esconde as imagens dos produtos selecionados
-    document.getElementById("image-selected-classic-burguer").style.display = "none";
-    document.getElementById("image-selected-vegetarian-burguer").style.display = "none";
-    document.getElementById("image-selected-bacon-burguer").style.display = "none";
-    document.getElementById("image-selected-coca-cola").style.display = "none";
-    document.getElementById("image-selected-fanta").style.display = "none";
-    document.getElementById("image-selected-sprite").style.display = "none";
-    document.getElementById("image-selected-orange-juice").style.display = "none";
-    document.getElementById("image-selected-lemon-juice").style.display = "none";
-    document.getElementById("image-selected-pineapple-juice").style.display = "none"; 
+    imageSelectedProduct[0].style.display = "none";
+    imageSelectedProduct[1].style.display = "none";
+    imageSelectedProduct[2].style.display = "none";
+    imageSelectedProduct[3].style.display = "none";
+    imageSelectedProduct[4].style.display = "none";
+    imageSelectedProduct[5].style.display = "none";
+    imageSelectedProduct[6].style.display = "none";
+    imageSelectedProduct[7].style.display = "none";
+    imageSelectedProduct[8].style.display = "none"; 
         
     // Esconde os nomes dos produtos
-    document.getElementById("name-classic-burguer").style.display = "none";
-    document.getElementById("name-vegetarian-burguer").style.display = "none";  
-    document.getElementById("name-bacon-burguer").style.display = "none";
-    document.getElementById("name-coca-cola").style.display = "none";  
-    document.getElementById("name-fanta").style.display = "none";  
-    document.getElementById("name-sprite").style.display = "none";
-    document.getElementById("name-orange-juice").style.display = "none";  
-    document.getElementById("name-lemon-juice").style.display = "none";  
-    document.getElementById("name-pineapple-juice").style.display = "none";
+    nameSelectedProduct[0].style.display = "none";
+    nameSelectedProduct[1].style.display = "none";  
+    nameSelectedProduct[2].style.display = "none";
+    nameSelectedProduct[3].style.display = "none";  
+    nameSelectedProduct[4].style.display = "none";  
+    nameSelectedProduct[5].style.display = "none";
+    nameSelectedProduct[6].style.display = "none";  
+    nameSelectedProduct[7].style.display = "none";  
+    nameSelectedProduct[8].style.display = "none";
 })
 
 
 
-function showBtnAddSelectedProduct() {
-    switch(selectedProduct) {
-        case "hamburguer classico":
-            btnAddClassicBurguer.style.display = "block";
-            break;
-
-        case "hamburguer vegetariano":
-            btnAddVegetarianBurguer.style.display = "block";
-            break;
-
-        case "hamburguer bbq bacon":
-            btnAddBaconBurguer.style.display = "block";
-            break;
-
-        case "coca-cola":
-            btnAddCocaCola.style.display = "block";
-            break;
-
-        case "fanta":
-            btnAddFanta.style.display = "block";
-            break;
-
-        case "sprite":
-            btnAddSprite.style.display = "block";
-            break;
-
-        case "suco de laranja":
-            btnAddOrangeJuice.style.display = "block";
-            break;
-
-        case "suco de limão":
-            btnAddLemonJuice.style.display = "block";
-            break;
-
-        case "suco de abacaxi":
-            btnAddPineappleJuice.style.display = "block";
-            break;
-
-        default:
-            alert("Produto não encontrado.");
-    }
+// Mostra a caixa dos produtos selecionados
+function showBoxSelectedProduct() {
+    textQuantity.style.display = "none";
+    boxSelectedProduct.style.display = "block";
+    boxSelectedProduct.style.display = "flex";
+    btnBackSelectedProduct.style.display = "block";
+    btnShowOrders.style.display = "none";
 }
