@@ -12,7 +12,7 @@ Este é o meu primeiro projeto como desenvolvedor front-end. Nele eu pude aplica
 
 ## Acesso ao Projeto
 
-Você pode acessar o projeto funcionando através do seguinte link: https://adri-ramos25.github.io/hamburgueria/
+Você pode ver o projeto funcionando através do seguinte link: https://adri-ramos25.github.io/hamburgueria/
 
 
 
@@ -60,7 +60,6 @@ src/                         # Pasta com o código-fonte do projeto
 README.md                    # Informações do projeto
 credits.html                 # Página dos créditos das imagens utilizadas no projeto
 index.html                   # Página inicial
-screenshot.png               # Screenshot do projeto
 ```
 
 
