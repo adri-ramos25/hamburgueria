@@ -1,6 +1,9 @@
 @media (max-width: 550px) and (min-width: 340px){
 
     /* Pagina principal */
+    input{
+        width: 250px;
+    }
     .box-products{
         width: 300px;
         margin-top: 10px;
@@ -19,7 +22,7 @@
     #box-orders{
         width: 330px;
     }
-    #box-selected-product{
+    #box-selected-product, .box-address{
         width: 300px;
     }
     #title-credits-page{
