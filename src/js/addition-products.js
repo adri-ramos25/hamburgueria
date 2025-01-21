@@ -18,7 +18,6 @@ const productQuantity = document.getElementsByClassName("product-quantity");
 let quantityAddedProducts = 0;
 
 
-//
 const btnMoreClassicBurguer = document.getElementsByClassName("btns-more-and-less")[1];
 const btnLessClassicBurguer = document.getElementsByClassName("btns-more-and-less")[0];
 
@@ -108,7 +107,6 @@ const nameAddedProduct = document.getElementsByClassName("name-added-product");
 hideBtnsConfirmeOrder();
 
 
-
 // Botao que fecha a caixa dos pedidos adicionados
 btnBackBoxOrders.addEventListener("click", () => {
     boxOrders.style.display = "none";
@@ -117,10 +115,10 @@ btnBackBoxOrders.addEventListener("click", () => {
 // Botao que confirma os pedidos adicionados
 btnConfirmOrders[0].addEventListener("click", () => {
     alert("PEDIDOS CONFIRMADOS! AGORA BASTA INFORMAR O ENDEREÇO DE ENTREGA!");
-
     boxOrders.style.display = "none";
-
     btnShowOrders.style.display = "none";
+    boxAddres.style.display = "block";
+    boxAddres.style.display = "flex";
 })
 
 
@@ -149,7 +147,6 @@ btnAddSelectedProduct[0].addEventListener("click", () => {
 })
 
 
-
 // Hamburguer vegetariano
 btnAddSelectedProduct[1].addEventListener("click", () => {
     addedProduct = "hamburguer vegetariano";
@@ -173,7 +170,6 @@ btnAddSelectedProduct[1].addEventListener("click", () => {
     // Pega a quantidade de produtos definidos pelo usuario e exibe na tela
     productQuantity[1].textContent = quantitiesVegetarianBurguer;
 })
-
 
 
 // Hamburguer bbq bacon
@@ -201,7 +197,6 @@ btnAddSelectedProduct[2].addEventListener("click", () => {
 })
 
 
-
 // Coca-cola
 btnAddSelectedProduct[3].addEventListener("click", () => {
     addedProduct = "coca cola";
@@ -225,7 +220,6 @@ btnAddSelectedProduct[3].addEventListener("click", () => {
     // Pega a quantidade de produtos definidos pelo usuario e exibe na tela
     productQuantity[3].textContent = quantitiesCocaCola;
 })
-
 
 
 // Fanta
@@ -253,7 +247,6 @@ btnAddSelectedProduct[4].addEventListener("click", () => {
 })
 
 
-
 // Sprite
 btnAddSelectedProduct[5].addEventListener("click", () => {
     addedProduct = "sprite";
@@ -277,7 +270,6 @@ btnAddSelectedProduct[5].addEventListener("click", () => {
     // Pega a quantidade de produtos definidos pelo usuario e exibe na tela
     productQuantity[5].textContent = quantitiesSprite;
 })
-
 
 
 // Suco de laranja
@@ -305,7 +297,6 @@ btnAddSelectedProduct[6].addEventListener("click", () => {
 })
 
 
-
 // Suco de limao
 btnAddSelectedProduct[7].addEventListener("click", () => {
     addedProduct = "suco de limao";
@@ -329,6 +320,7 @@ btnAddSelectedProduct[7].addEventListener("click", () => {
     // Pega a quantidade de produtos definidos pelo usuario e exibe na tela
     productQuantity[7].textContent = quantitiesLemonJuice;
 })
+
 
 // Suco de abacaxi
 btnAddSelectedProduct[8].addEventListener("click", () => {
@@ -390,7 +382,6 @@ btnConfirmOrder[0].addEventListener("click", () => {
     btnShowOrders.style.display = "block";
     btnRemoveOrder[0].style.display = "block";
 })
-
 // Cancela a adicao do hamburguer classico aos pedidos
 btnCancelAddition[0].addEventListener("click", () => {
     if (quantitiesVegetarianBurguer>=1 || quantitiesClassicBurguer>=1 || quantitiesBaconBurguer>=1) {
@@ -441,7 +432,6 @@ btnConfirmOrder[1].addEventListener("click", () => {
     btnShowOrders.style.display = "block";
     btnRemoveOrder[1].style.display = "block";
 })
-
 // Cancela a adicao do hamburguer vegetariano aos pedidos
 btnCancelAddition[1].addEventListener("click", () => {
     if (quantitiesVegetarianBurguer>=1 || quantitiesClassicBurguer>=1 || quantitiesBaconBurguer>=1) {
@@ -492,7 +482,6 @@ btnConfirmOrder[2].addEventListener("click", () => {
     btnShowOrders.style.display = "block";
     btnRemoveOrder[2].style.display = "block";
 })
-
 // Cancela a adicao do hamburguer bbq bacon aos pedidos
 btnCancelAddition[2].addEventListener("click", () => {
     if (quantitiesBaconBurguer>=1 || quantitiesClassicBurguer>=1 || quantitiesVegetarianBurguer>=1) {
@@ -543,7 +532,6 @@ btnConfirmOrder[3].addEventListener("click", () => {
     btnShowOrders.style.display = "block";
     btnRemoveOrder[3].style.display = "block";
 })
-
 // Cancela a adicao da coca cola aos pedidos
 btnCancelAddition[3].addEventListener("click", () => {
     if (quantitiesCocaCola>=1 || quantitiesClassicBurguer>=1 || quantitiesVegetarianBurguer>=1 || quantitiesBaconBurguer) {
@@ -594,7 +582,6 @@ btnConfirmOrder[4].addEventListener("click", () => {
     btnShowOrders.style.display = "block";
     btnRemoveOrder[4].style.display = "block";
 })
-
 // Cancela a adicao da fanta aos pedidos
 btnCancelAddition[4].addEventListener("click", () => {
     if (quantitiesFanta>=1 || quantitiesClassicBurguer>=1 || quantitiesVegetarianBurguer>=1 || quantitiesBaconBurguer || quantitiesCocaCola>=1) {
@@ -645,7 +632,6 @@ btnConfirmOrder[5].addEventListener("click", () => {
     btnShowOrders.style.display = "block";
     btnRemoveOrder[5].style.display = "block";
 })
-
 // Cancela a adicao do sprite aos pedidos
 btnCancelAddition[5].addEventListener("click", () => {
     if (quantitiesFanta>=1 || quantitiesSprite>=1 || quantitiesClassicBurguer>=1 || quantitiesVegetarianBurguer>=1 || quantitiesBaconBurguer || quantitiesCocaCola>=1) {
@@ -696,7 +682,6 @@ btnConfirmOrder[6].addEventListener("click", () => {
     btnShowOrders.style.display = "block";
     btnRemoveOrder[6].style.display = "block";
 })
-
 // Cancela a adicao do suco de laranja aos pedidos
 btnCancelAddition[6].addEventListener("click", () => {
     if (quantitiesOrangeJuice>=1 || quantitiesFanta>=1 || quantitiesSprite>=1 || quantitiesClassicBurguer>=1 || quantitiesVegetarianBurguer>=1 || quantitiesBaconBurguer || quantitiesCocaCola>=1) {
@@ -747,7 +732,6 @@ btnConfirmOrder[7].addEventListener("click", () => {
     btnShowOrders.style.display = "block";
     btnRemoveOrder[7].style.display = "block";
 })
-
 // Cancela a adicao do suco de limao aos pedidos
 btnCancelAddition[7].addEventListener("click", () => {
     if (quantitiesLemonJuice>=1 || quantitiesOrangeJuice>=1 || quantitiesFanta>=1 || quantitiesSprite>=1 || quantitiesClassicBurguer>=1 || quantitiesVegetarianBurguer>=1 || quantitiesBaconBurguer || quantitiesCocaCola>=1) {
@@ -798,7 +782,6 @@ btnConfirmOrder[8].addEventListener("click", () => {
     btnShowOrders.style.display = "block";
     btnRemoveOrder[8].style.display = "block";
 })
-
 // Cancela a adicao do suco de abacaxi aos pedidos
 btnCancelAddition[8].addEventListener("click", () => {
     if (quantitiesLemonJuice>=1 || quantitiesLemonJuice>=1 || quantitiesOrangeJuice>=1 || quantitiesFanta>=1 || quantitiesSprite>=1 || quantitiesClassicBurguer>=1 || quantitiesVegetarianBurguer>=1 || quantitiesBaconBurguer || quantitiesCocaCola>=1) {
@@ -831,7 +814,6 @@ btnMoreClassicBurguer.addEventListener("click", () => {
 
     console.log(valueClassicBurguer)
 })
-
 // Diminui 1 hamburguer classico
 btnLessClassicBurguer.addEventListener("click", () => {
     valueClassicBurguer -= 7;
@@ -863,7 +845,6 @@ btnMoreVegetarianBurguer.addEventListener("click", () => {
         btnConfirmOrder[1].style.display = "block";
     }
 })
-
 // Diminui 1 hamburguer vegetariano
 btnLessVegetarianBurguer.addEventListener("click", () => {
     valueVegetarianBurguer -= 9.5;
@@ -893,7 +874,6 @@ btnMoreBaconBurguer.addEventListener("click", () => {
         btnConfirmOrder[2].style.display = "block";
     }
 })
-
 // Diminui 1 hamburguer bbq bacon
 btnLessBaconBurguer.addEventListener("click", () => {
     valueBaconBurguer -= 12;
@@ -924,7 +904,6 @@ btnMoreCocaCola.addEventListener("click", () => {
         btnConfirmOrder[3].style.display = "block";
     }
 })
-
 // Diminui 1 coca cola
 btnLessCocaCola.addEventListener("click", () => {
     valueCocaCola -= 8;
@@ -954,7 +933,6 @@ btnMoreFanta.addEventListener("click", () => {
         btnConfirmOrder[4].style.display = "block";
     }
 })
-
 // Diminui 1 fanta
 btnLessFanta.addEventListener("click", () => {
     valueFanta -= 6;
@@ -985,7 +963,6 @@ btnMoreSprite.addEventListener("click", () => {
         btnConfirmOrder[5].style.display = "block";
     }
 })
-
 // Diminui 1 sprite
 btnLessSprite.addEventListener("click", () => {
     valueSprite -= 6.5;
@@ -1016,7 +993,6 @@ btnMoreOrangeJuice.addEventListener("click", () => {
         btnConfirmOrder[6].style.display = "block";
     }
 })
-
 // Diminui 1 suco de laranja
 btnLessOrangeJuice.addEventListener("click", () => {
     valueOrangeJuice -= 5;
@@ -1047,7 +1023,6 @@ btnMoreLemonJuice.addEventListener("click", () => {
         btnConfirmOrder[7].style.display = "block";
     }
 })
-
 // Diminui 1 suco de limao
 btnLessLemonJuice.addEventListener("click", () => {
     valueLemonJuice -= 7;
@@ -1078,7 +1053,6 @@ btnMorePineappleJuice.addEventListener("click", () => {
         btnConfirmOrder[8].style.display = "block";
     }
 })
-
 // Diminui 1 suco de abacaxi
 btnLessPineappleJuice.addEventListener("click", () => {
     valuePineappleJuice -= 7.5;
@@ -1096,25 +1070,10 @@ btnLessPineappleJuice.addEventListener("click", () => {
 
 
 
-
-// Mostra a tela onde o usuario escolhe a quantidade de produtos que ele quer adicionar aos pedidos
-function showScreenQuantitites() {
-    
-}
-
-
-
-// Esconde a tela onde o usuario escolhe a quantidade de produtos que ele quer adicionar aos pedidos
-function hideScreenQuantitites() {
-    
-}
-
-
 function showBtns() {
     textQuantity.style.display = "block";
     btnBackSelectedProduct.style.display = "none";
 }
-
 
 
 function hideBtnsConfirmeOrder() {

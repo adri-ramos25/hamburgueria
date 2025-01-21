@@ -40,7 +40,7 @@
                     <ul>
                         <!-- Link 1 -->
                         <li class="margin-links"><a href="#menu-section">
-                            CONFIRA NOSSO CARDÁPIO E FAÇA SEU PEDIDO!
+                            CONFIRA NOSSO CARDÁPIO E FAÇA SEUS PEDIDOS!
                         </a></li>
             
                         <!-- Link 2 -->
@@ -210,6 +210,8 @@
                     </div>
                 </div>
 
+
+
                     <!-- Esta div aparece quando clica nos botoes dos produtos e mostra a imagem, os nomes, e os precos deles, o botao de adicionar eles aos pedidos e o botao de voltar -->
                     <div id="box-selected-product">
 
@@ -217,7 +219,7 @@
 
 
                         <!-- Hamburguer classico -->
-                        <img src="src/images/classic-burguer.png" alt="imagem de um hambúrguer clássico" class="image-selected-product">
+                        <img src="src/images/classic-burguer.png" alt="imagem de um hambúrguer clássico" class="image-btn-classic-burguer image-selected-product">
 
                         <p class="name-selected-product">HAMBÚRGUER CLÁSSICO POR R$7,00</p>
 
@@ -242,7 +244,7 @@
 
 
                         <!-- Hamburguer vegetariano -->
-                        <img src="src/images/vegetarian-burguer.png" alt="imagem de um hambúrguer vegetariano" class="image-selected-product">
+                        <img src="src/images/vegetarian-burguer.png" alt="imagem de um hambúrguer vegetariano" class="image-btn-vegetarian-burguer image-selected-product">
 
                         <p class="name-selected-product">HAMBÚRGUER VEGETARIANO POR R$9,50</p>
 
@@ -267,7 +269,7 @@
 
 
                         <!-- Hamburguer bbq bacon -->
-                        <img src="src/images/bacon-burguer.png" alt="imagem de um hambúrguer bbq bacon" class="image-selected-product">
+                        <img src="src/images/bacon-burguer.png" alt="imagem de um hambúrguer bbq bacon" class="image-btn-bacon-burguer image-selected-product">
 
                         <p class="name-selected-product">HAMBÚRGUER BBQ BACON POR R$12,00</p>
 
@@ -292,7 +294,7 @@
 
 
                         <!-- Coca-cola -->
-                        <img src="src/images/coca-cola.png" alt="imagem de uma lata de coca-cola" class="image-selected-product">
+                        <img src="src/images/coca-cola.png" alt="imagem de uma lata de coca-cola" class="image-btn-coca-cola image-selected-product">
 
                         <p class="name-selected-product">COCA-COLA POR R$8,00</p>
 
@@ -317,7 +319,7 @@
 
 
                         <!-- Fanta -->
-                        <img src="src/images/fanta.png" alt="imagem de uma lata de fanta" class="image-selected-product">
+                        <img src="src/images/fanta.png" alt="imagem de uma lata de fanta" class="image-btn-fanta image-selected-product">
 
                         <p class="name-selected-product">FANTA POR R$6,00</p>
 
@@ -342,7 +344,7 @@
 
 
                         <!-- Sprite -->
-                        <img src="src/images/sprite.png" alt="imagem de uma lata de sprite" class="image-selected-product">
+                        <img src="src/images/sprite.png" alt="imagem de uma lata de sprite" class="image-btn-sprite image-selected-product">
 
                         <p class="name-selected-product">SPRITE POR R$6,50</p>
 
@@ -368,7 +370,7 @@
 
 
                         <!-- Suco de laranja -->
-                        <img src="src/images/orange-juice.png" alt="imagem de um copo de suco de laranja" class="image-selected-product">
+                        <img src="src/images/orange-juice.png" alt="imagem de um copo de suco de laranja" class="image-btn-orange-juice image-selected-product">
 
                         <p class="name-selected-product">SUCO DE LARANJA POR R$5,00</p>
 
@@ -393,7 +395,7 @@
 
 
                         <!-- Suco de limao -->
-                        <img src="src/images/lemon-juice.png" alt="imagem de um copo de suco de limão" class="image-selected-product">
+                        <img src="src/images/lemon-juice.png" alt="imagem de um copo de suco de limão" class="image-btn-lemon-juice image-selected-product">
 
                         <p class="name-selected-product">SUCO DE LIMÃO POR R$7,00</p>
 
@@ -418,7 +420,7 @@
 
 
                         <!-- Suco de abacaxi -->
-                        <img src="src/images/pineapple-juice.png" alt="imagem de um copo de suco de abacaxi" class="image-selected-product">
+                        <img src="src/images/pineapple-juice.png" alt="imagem de um copo de suco de abacaxi" class="image-btn-pineapple-juice image-selected-product">
 
                         <p class="name-selected-product">SUCO DE ABACAXI POR R$7,50</p>
 
@@ -440,13 +442,14 @@
 
                         <button class="btn-cancel-addition styles-btns-selected-product">CANCELAR</button>
 
-
-
                         <!-- Fecha a caixa do produto selecionado -->
                         <button id="btn-back-selected-product" class="styles-btns-selected-product">VOLTAR</button>
+
                     </div>
 
+
                     <button id="btn-show-requests" class="styles-btns-selected-product">PEDIDOS</button>
+
 
 
                     <!-- Caixa dos pedidos -->
@@ -584,6 +587,15 @@
                             <button id="btn-back-box-orders" class="styles-btns-selected-product">VOLTAR</button>
                         </div>
                     </div>
+
+
+
+                    <div class="box-address">
+                        <p>CERTIFIQUE-SE DE INFORMAR O ENDEREÇO CORRETO!</p>
+
+                        <input type="text">
+
+                        <button type="submit" id="btn-confirm-address" class="styles-btns-selected-product">CONFIRMAR ENDEREÇO</button>
                 </div>
         </section>
       
@@ -641,45 +653,43 @@
     
 
     <!-- Secao 6 (rodape) -->
-    <footer>
-        <section id="footer-section">
-            <div class="box-footer-section">
-                <img class="logo-burguer-joint-footer-section" src="src/images/logo-burguer-joint.png" alt="logo da hamburgueria">
+    <footer id="footer-section">
+        <div class="box-footer-section">
+            <img class="logo-burguer-joint-footer-section" src="src/images/logo-burguer-joint.png" alt="logo da hamburgueria">
         
-                <div class="contacts-title">
-                </div>
+            <div class="contacts-title"></div>
         
-                <!-- Contato 1 (telefone) -->
-                <div class="box-contacts">
-                    <p class="title-contacts">ENTRE EM CONTATO CONOSCO!</p>
+            <div class="box-contacts">
+                <p class="title-contacts">ENTRE EM CONTATO CONOSCO!</p>
 
-                    <div class="box-contact-phone">
-                        <i class="bi bi-telephone"></i>
-                        <p class="text-contact-phone">PELO NOSSO TELEFONE: 999999999</p>
-                    </div>
-
-                    <div class="box-contact-email">
-                        <i class="bi bi-envelope"></i>
-                        <p class="text-contact-email">PELO NOSSO E-MAIL: contato@hamburgueria</p>
-                    </div>
-
-                    <p class="title-follow-us-instagram">SIGA-NOS NO INSTAGRAM!</p>
-
-                    <div class="box-contact-instagram">
-                        <i id="instagram-icon" class="bi bi-instagram"></i>
-                        <p class="text-contact-instagram">@hamburgueria</p>
-                    </div>
-                </div>
-        
-                <div class="box-credits-links">
-                    <a href="credits.html">CRÉDITOS DAS IMAGENS UTILIZADAS NESTE PROJETO</a>
+                <div class="box-contact-phone">
+                    <i class="bi bi-telephone"></i>
+                    <p class="text-contact-phone">PELO NOSSO TELEFONE: 999999999</p>
                 </div>
 
-                <div class="box-developer-name">
-                    <p>Desenvolvido por <a class="developer-name" href="https://github.com/adri-ramos25" target="_blank">Adriano Ramos</a></p>
+                <div class="box-contact-email">
+                    <i class="bi bi-envelope"></i>
+                    <p class="text-contact-email">PELO NOSSO E-MAIL: contato@hamburgueria</p>
+                </div>
+
+                <p class="title-follow-us-instagram">SIGA-NOS NO INSTAGRAM!</p>
+
+                <div class="box-contact-instagram">
+                    <i id="instagram-icon" class="bi bi-instagram"></i>
+                    <p class="text-contact-instagram">@hamburgueria</p>
                 </div>
             </div>
-        </section>
+
+
+        
+            <div class="box-credits-links">
+                <a href="credits.html">CRÉDITOS DAS IMAGENS UTILIZADAS NESTE PROJETO</a>
+            </div>
+        </div>
+
+        <div class="box-developer-name">
+            <p>Desenvolvido por <a class="developer-name" href="https://github.com/adri-ramos25" target="_blank">Adriano Ramos</a></p>
+        </div>
     </footer>
 
     <script src="src/js/products.js"></script>

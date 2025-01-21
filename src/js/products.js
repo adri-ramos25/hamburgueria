@@ -11,33 +11,15 @@ const nameSelectedProduct = document.getElementsByClassName("name-selected-produ
 
 const btnBackSelectedProduct = document.getElementById("btn-back-selected-product");
 
+const boxAddres = document.getElementsByClassName("box-address")[0];
+
+const btnConfirmAddress = document.getElementById("btn-confirm-address");
+
 // Produto selecionado pelo usuario
 let selectedProduct = "";
 
 
-// Esconde todas as imagens dos produtos da caixa dos produtos selecionados
-imageSelectedProduct[0].style.display = "none";
-imageSelectedProduct[1].style.display = "none";
-imageSelectedProduct[2].style.display = "none";
-imageSelectedProduct[3].style.display = "none";
-imageSelectedProduct[4].style.display = "none";
-imageSelectedProduct[5].style.display = "none";
-imageSelectedProduct[6].style.display = "none";
-imageSelectedProduct[7].style.display = "none";
-imageSelectedProduct[8].style.display = "none";
-
-// Esconde todos os nomes dos produtos da caixa dos produtos selecionados
-nameSelectedProduct[0].style.display = "none";
-nameSelectedProduct[1].style.display = "none";
-nameSelectedProduct[2].style.display = "none";
-nameSelectedProduct[3].style.display = "none";
-nameSelectedProduct[4].style.display = "none";
-nameSelectedProduct[5].style.display = "none";
-nameSelectedProduct[6].style.display = "none";
-nameSelectedProduct[7].style.display = "none";
-nameSelectedProduct[8].style.display = "none";
-
-
+hideImagesAndNames();
 
 
 // Hamburguer classico
@@ -264,6 +246,40 @@ btnBackSelectedProduct.addEventListener("click", () => {
     nameSelectedProduct[7].style.display = "none";  
     nameSelectedProduct[8].style.display = "none";
 })
+
+
+
+btnConfirmAddress.addEventListener("click", () => {
+    alert("OS PEDIDOS SERÃO ENTREGUES NO ENDEREÇO INFORMADO!");
+
+    location.reload(true);
+})
+
+
+
+// Esconde as imagens e nomes dos produtos selecionados pelo usuario
+function hideImagesAndNames() {
+    imageSelectedProduct[0].style.display = "none";
+    imageSelectedProduct[1].style.display = "none";
+    imageSelectedProduct[2].style.display = "none";
+    imageSelectedProduct[3].style.display = "none";
+    imageSelectedProduct[4].style.display = "none";
+    imageSelectedProduct[5].style.display = "none";
+    imageSelectedProduct[6].style.display = "none";
+    imageSelectedProduct[7].style.display = "none";
+    imageSelectedProduct[8].style.display = "none";
+
+
+    nameSelectedProduct[0].style.display = "none";
+    nameSelectedProduct[1].style.display = "none";
+    nameSelectedProduct[2].style.display = "none";
+    nameSelectedProduct[3].style.display = "none";
+    nameSelectedProduct[4].style.display = "none";
+    nameSelectedProduct[5].style.display = "none";
+    nameSelectedProduct[6].style.display = "none";
+    nameSelectedProduct[7].style.display = "none";
+    nameSelectedProduct[8].style.display = "none";
+}
 
 
 

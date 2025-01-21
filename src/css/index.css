@@ -3,24 +3,31 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: Sans-Serif;
     font-weight: bold;
 }
-
 ul{
     list-style-type: none;
 }
-
 a{
     color: #f89147;
 }
-
 li{
     font-size: 15px;
 }
-
+input{
+    border: 3px solid #772f0d;
+    border-radius: 20px;
+    width: 300px;
+    height: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 button{
     background-color: transparent;
     border: none;
@@ -33,7 +40,6 @@ button{
 
 
 /* Secao 1 (cabecalho) */
-
 .box-header-section{
     display: flex;
     flex-direction: column;
@@ -44,11 +50,9 @@ button{
     text-align: center;
     color: #e81e36;
 }
-
 .logo-burguer-joint{
     width: 15em;
 }
-
 .text-mission-burguer-joint{
     margin-top: 50px;
     width: 20em;
@@ -65,11 +69,9 @@ button{
     padding-top: 80px;
     padding-bottom: 80px;
 }
-
 .links-navigation-section{
     padding: 10px 20px 20px 20px;
 }
-
 .border-navigation-section{
     width: 15em;
     margin-right: auto;
@@ -79,11 +81,9 @@ button{
     padding-top: 20px;
     padding-bottom: 8px;
 }
-
 .title-navigation-section{
     margin-top: 8px;
 }
-
 .margin-links{
     margin: 30px 0 0 0;
 }
@@ -91,7 +91,6 @@ button{
 
 
 /* Secao 3 (cardapio) */
-
 .box-menu-section{
     display: flex;
     flex-direction: column;
@@ -100,18 +99,15 @@ button{
     text-align: center;
     color: #6b2100;
 }
-
 .title-menu-section{
     width: 22em;
     margin-top: 30px;
     margin-bottom: 30px;
 }
-
 .caption{
     width: 20.5em;
     margin-bottom: 30px;
 }
-
 .box-products{
     display: flex;
     flex-direction: column;
@@ -121,6 +117,7 @@ button{
     margin: 30px;
     padding: 10px 10px;
 }
+
 
 /* Faz os botoes dos produtos ficarem alinhados */ 
 .btn-product{
@@ -136,46 +133,77 @@ button{
     color: #ffcf57;
     transition: 0.2s ease;
 }
-
 .btn-product:hover{
     background-color: #e81e36;
 }
-
 .align-btns-products{
     display: flex;
     flex-wrap: wrap;
 }
-
 .margin-btns-products{
     margin: 10px;
 }
 
 
 /* Titulos das secoes dos produtos */
-
 .title-burguers-section, .title-soft-drinks-section{
     width: 10em;
     margin: auto;
 }
-
 .title-juices-section{
     width: 15em;
     margin: auto;
 }
 
-
-
-
-/* Imagens dos produtos */
-
-.image-btn-classic-burguer, .image-btn-vegetarian-burguer, .image-btn-bacon-burguer, .image-btn-coca-cola, .image-btn-fanta, .image-btn-sprite, .image-btn-orange-juice, .image-btn-lemon-juice, .image-btn-pineapple-juice{
-    width: 3em;
+/* Imagens dos hamburgueres */
+.image-btn-classic-burguer{
+    width: 5em;
+    margin-top: 23px;
+    margin-bottom: 20px;
+}
+.image-btn-vegetarian-burguer{
+    width: 5em;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.image-btn-bacon-burguer{
+    width: 5em;
     margin-top: 15px;
     margin-bottom: 20px;
 }
 
-.image-selected-product, .image-selected-product, .image-selected-product, .image-selected-product, .image-selected-product, .image-selected-product, .image-selected-product, .image-selected-product, .image-selected-product{
+
+/* Imagens dos refrigerantes */
+.image-btn-coca-cola{
+    width: 2.5em;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.image-btn-fanta{
     width: 3em;
+    margin-top: 22px;
+    margin-bottom: 20px;
+}
+.image-btn-sprite{
+    width: 4em;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+
+/* Imagens dos sucos */
+.image-btn-orange-juice{
+    width: 3.5em;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.image-btn-lemon-juice{
+    width: 3em;
+    margin-top: 32px;
+    margin-bottom: 20px;
+}
+.image-btn-pineapple-juice{
+    width: 2em;
     margin-top: 15px;
     margin-bottom: 20px;
 }
@@ -183,7 +211,6 @@ button{
 
 
 /* Secao 4 (sobre nos) */
-
 .box-about-us-section{
     background-color: #fbb161;
     padding-top: 80px;
@@ -191,7 +218,6 @@ button{
     text-align: center;
     color: #330f03;
 }
-
 .border-about-us-section{
     width: 15em;
     margin: auto;
@@ -199,7 +225,6 @@ button{
     border-radius: 20px;
     padding: 20px;
 }
-
 .title-about-us-section{
     margin-bottom: 20px;
 }
@@ -207,7 +232,6 @@ button{
 
 
 /* Secao 5 (depoimentos dos clientes) */
-
 .box-testimonials-section{
     display: flex;
     flex-direction: column;
@@ -217,16 +241,13 @@ button{
     text-align: center;
     color: #330f03;
 }
-
 .title-testimonials-section{
     margin-top: 30px;
     font-size: 20px;
 }
-
 .box-testimony-1, .box-testimony-2{
     margin: 30px;
 }
-
 .photos-styles{
     height: 5em;
     width: 5em;
@@ -234,7 +255,6 @@ button{
     border-radius: 50%;
     margin-top: 20px;
 }
-
 .box-testimony-1{
     border: 5px solid #330f03;
     border-radius: 20px;
@@ -246,7 +266,6 @@ button{
     padding-right: 30px;
     padding-left: 30px;
 }
-
 .box-testimony-2{
     border: 5px solid #330f03;
     border-radius: 20px;
@@ -258,7 +277,6 @@ button{
     padding-right: 30px;
     padding-left: 30px;
 }
-
 .elements-box-testimony-1, .elements-box-testimony-2{
     margin: auto;
 }
@@ -266,7 +284,6 @@ button{
 
 
 /* Secao 6 (rodape) */
-
 .box-footer-section{
     display: flex;
     flex-direction: column;
@@ -276,20 +293,17 @@ button{
     text-align: center;
     color: #e81e36;
 }
-
 .logo-burguer-joint-footer-section{
     width: 8em;
     margin-top: 30px;
     margin-bottom: 30px;
 }
-
 .title-contacts{
     margin-bottom: 10px;
     width: 320px;
     font-size: 20px;
     color: #e81e36;
 }
-
 .box-contacts{
     display: flex;
     flex-direction: column;
@@ -300,13 +314,11 @@ button{
     color: #f89147;
     font-size: 17px;
 }
-
 .box-contact-phone, .box-contact-email, .box-contact-instagram{
     display: flex;
     align-items: center;
     font-size: 15px;
 }
-
 .title-follow-us-instagram{
     color: #e81e36;
     width: 270px;
@@ -314,38 +326,29 @@ button{
     margin-bottom: 10px;
     font-size: 20px;
 }
-
 .text-contact-phone{
     width: 18em;
     margin: 10px;
 }
-
 .text-contact-email{
     width: 13em;
 }
-
 .text-contact-instagram{
     width: 9em;
 }
-
 .box-credits-links{
     width: 28em;
     margin-bottom: 50px;
     font-size: 14px;
     text-align: center;
 }
-
 .box-developer-name{
     display: flex;
     justify-content: center;
-    padding: 20px 20px;
-    color: #f89147;
-    margin-bottom: 20px;
+    padding: 15px 15px;
+    background-color: #fff;
+    color: #000;
 }
-
 .developer-name{
-    background-color: #000;
-    padding: 5px;
-    border-radius: 30px;
     color: #1978e5;
 }
