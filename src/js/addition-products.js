@@ -135,6 +135,7 @@ btnAddSelectedProduct[0].addEventListener("click", () => {
     boxBtnsMoreAndLess[0].style.display = "block";
     boxBtnsMoreAndLess[0].style.display = "flex";
     productQuantity[0].style.display = "block";
+    productQuantity[0].style.display = "flex";
     imageSelectedProduct[0].style.display = "none";
     nameSelectedProduct[0].style.display = "none";
     btnCancelAddition[0].style.display = "block";
@@ -160,6 +161,7 @@ btnAddSelectedProduct[1].addEventListener("click", () => {
     boxBtnsMoreAndLess[1].style.display = "block";
     boxBtnsMoreAndLess[1].style.display = "flex";
     productQuantity[1].style.display = "block";
+    productQuantity[1].style.display = "flex";
     imageSelectedProduct[1].style.display = "none";
     nameSelectedProduct[1].style.display = "none";
     btnCancelAddition[1].style.display = "block";
@@ -185,6 +187,7 @@ btnAddSelectedProduct[2].addEventListener("click", () => {
     boxBtnsMoreAndLess[2].style.display = "block";
     boxBtnsMoreAndLess[2].style.display = "flex";
     productQuantity[2].style.display = "block";
+    productQuantity[2].style.display = "flex";
     imageSelectedProduct[2].style.display = "none";
     nameSelectedProduct[2].style.display = "none";
     btnCancelAddition[2].style.display = "block";
@@ -210,6 +213,7 @@ btnAddSelectedProduct[3].addEventListener("click", () => {
     boxBtnsMoreAndLess[3].style.display = "block";
     boxBtnsMoreAndLess[3].style.display = "flex";
     productQuantity[3].style.display = "block";
+    productQuantity[3].style.display = "flex";
     imageSelectedProduct[3].style.display = "none";
     nameSelectedProduct[3].style.display = "none";
     btnCancelAddition[3].style.display = "block";
@@ -235,6 +239,7 @@ btnAddSelectedProduct[4].addEventListener("click", () => {
     boxBtnsMoreAndLess[4].style.display = "block";
     boxBtnsMoreAndLess[4].style.display = "flex";
     productQuantity[4].style.display = "block";
+    productQuantity[4].style.display = "flex";
     imageSelectedProduct[4].style.display = "none";
     nameSelectedProduct[4].style.display = "none";
     btnCancelAddition[4].style.display = "block";
@@ -260,6 +265,7 @@ btnAddSelectedProduct[5].addEventListener("click", () => {
     boxBtnsMoreAndLess[5].style.display = "block";
     boxBtnsMoreAndLess[5].style.display = "flex";
     productQuantity[5].style.display = "block";
+    productQuantity[5].style.display = "flex";
     imageSelectedProduct[5].style.display = "none";
     nameSelectedProduct[5].style.display = "none";
     btnCancelAddition[5].style.display = "block";
@@ -285,6 +291,7 @@ btnAddSelectedProduct[6].addEventListener("click", () => {
     boxBtnsMoreAndLess[6].style.display = "block";
     boxBtnsMoreAndLess[6].style.display = "flex";
     productQuantity[6].style.display = "block";
+    productQuantity[6].style.display = "flex";
     imageSelectedProduct[6].style.display = "none";
     nameSelectedProduct[6].style.display = "none";
     btnCancelAddition[6].style.display = "block";
@@ -310,6 +317,7 @@ btnAddSelectedProduct[7].addEventListener("click", () => {
     boxBtnsMoreAndLess[7].style.display = "block";
     boxBtnsMoreAndLess[7].style.display = "flex";
     productQuantity[7].style.display = "block";
+    productQuantity[7].style.display = "flex";
     imageSelectedProduct[7].style.display = "none";
     nameSelectedProduct[7].style.display = "none";
     btnCancelAddition[7].style.display = "block";
@@ -335,6 +343,7 @@ btnAddSelectedProduct[8].addEventListener("click", () => {
     boxBtnsMoreAndLess[8].style.display = "block";
     boxBtnsMoreAndLess[8].style.display = "flex";
     productQuantity[8].style.display = "block";
+    productQuantity[8].style.display = "flex";
     imageSelectedProduct[8].style.display = "none";
     nameSelectedProduct[8].style.display = "none";
     btnCancelAddition[8].style.display = "block";
@@ -346,8 +355,6 @@ btnAddSelectedProduct[8].addEventListener("click", () => {
     productQuantity[8].textContent = quantitiesPineappleJuice;
 })
 
-
-console.log(valueClassicBurguer)
 
 
 // Confirma a adicao do hamburguer classico aos pedidos
@@ -807,12 +814,11 @@ btnMoreClassicBurguer.addEventListener("click", () => {
     valueClassicBurguer += 7;
 
     productQuantity[0].textContent = quantitiesClassicBurguer;
+    productQuantity[0].style.display = "flex";
 
     if (quantitiesClassicBurguer >= 1) {
         btnConfirmOrder[0].style.display = "block";
     }
-
-    console.log(valueClassicBurguer)
 })
 // Diminui 1 hamburguer classico
 btnLessClassicBurguer.addEventListener("click", () => {
@@ -823,12 +829,11 @@ btnLessClassicBurguer.addEventListener("click", () => {
     }
 
     productQuantity[0].textContent = quantitiesClassicBurguer;
+    productQuantity[0].style.display = "flex";
 
     if (quantitiesClassicBurguer == 0) {
         btnConfirmOrder[0].style.display = "none";
     }
-
-    console.log(valueClassicBurguer)
 })
 
 
@@ -840,6 +845,7 @@ btnMoreVegetarianBurguer.addEventListener("click", () => {
     valueVegetarianBurguer += 9.5;
 
     productQuantity[1].textContent = quantitiesVegetarianBurguer;
+    productQuantity[1].style.display = "flex";
 
     if (quantitiesVegetarianBurguer >= 1) {
         btnConfirmOrder[1].style.display = "block";
@@ -854,6 +860,7 @@ btnLessVegetarianBurguer.addEventListener("click", () => {
     }
 
     productQuantity[1].textContent = quantitiesVegetarianBurguer;
+    productQuantity[1].style.display = "flex";
 
     if (quantitiesVegetarianBurguer == 0) {
         btnConfirmOrder[1].style.display = "none";
@@ -869,6 +876,7 @@ btnMoreBaconBurguer.addEventListener("click", () => {
     valueBaconBurguer += 12;
 
     productQuantity[2].textContent = quantitiesBaconBurguer;
+    productQuantity[2].style.display = "flex";
 
     if (quantitiesBaconBurguer >= 1) {
         btnConfirmOrder[2].style.display = "block";
@@ -883,6 +891,7 @@ btnLessBaconBurguer.addEventListener("click", () => {
     }
 
     productQuantity[2].textContent = quantitiesBaconBurguer;
+    productQuantity[2].style.display = "flex";
 
     if (quantitiesBaconBurguer == 0) {
         btnConfirmOrder[2].style.display = "none";
@@ -899,6 +908,7 @@ btnMoreCocaCola.addEventListener("click", () => {
     valueCocaCola += 8;
 
     productQuantity[3].textContent = quantitiesCocaCola;
+    productQuantity[3].style.display = "flex";
 
     if (quantitiesCocaCola >= 1) {
         btnConfirmOrder[3].style.display = "block";
@@ -913,6 +923,7 @@ btnLessCocaCola.addEventListener("click", () => {
     }
 
     productQuantity[3].textContent = quantitiesCocaCola;
+    productQuantity[3].style.display = "flex";
 
     if (quantitiesCocaCola == 0) {
         btnConfirmOrder[0].style.display = "none";
@@ -928,6 +939,7 @@ btnMoreFanta.addEventListener("click", () => {
     valueFanta += 6;
 
     productQuantity[4].textContent = quantitiesFanta;
+    productQuantity[4].style.display = "flex";
 
     if (quantitiesFanta >= 1) {
         btnConfirmOrder[4].style.display = "block";
@@ -942,6 +954,7 @@ btnLessFanta.addEventListener("click", () => {
     }
 
     productQuantity[4].textContent = quantitiesFanta;
+    productQuantity[4].style.display = "flex";
 
     if (quantitiesFanta == 0) {
         btnConfirmOrder[0].style.display = "none";
@@ -958,6 +971,7 @@ btnMoreSprite.addEventListener("click", () => {
     valueSprite += 6.5;
 
     productQuantity[5].textContent = quantitiesSprite;
+    productQuantity[5].style.display = "flex";
 
     if (quantitiesSprite >= 1) {
         btnConfirmOrder[5].style.display = "block";
@@ -972,6 +986,7 @@ btnLessSprite.addEventListener("click", () => {
     }
 
     productQuantity[5].textContent = quantitiesSprite;
+    productQuantity[5].style.display = "flex";
 
     if (quantitiesSprite == 0) {
         btnConfirmOrder[5].style.display = "none";
@@ -988,6 +1003,7 @@ btnMoreOrangeJuice.addEventListener("click", () => {
     valueOrangeJuice += 5;
 
     productQuantity[6].textContent = quantitiesOrangeJuice;
+    productQuantity[6].style.display = "flex";
 
     if (quantitiesOrangeJuice >= 1) {
         btnConfirmOrder[6].style.display = "block";
@@ -1002,6 +1018,7 @@ btnLessOrangeJuice.addEventListener("click", () => {
     }
 
     productQuantity[6].textContent = quantitiesOrangeJuice;
+    productQuantity[6].style.display = "flex";
 
     if (quantitiesOrangeJuice == 0) {
         btnConfirmOrder[6].style.display = "none";
@@ -1018,6 +1035,7 @@ btnMoreLemonJuice.addEventListener("click", () => {
     valueLemonJuice += 7;
 
     productQuantity[7].textContent = quantitiesLemonJuice;
+    productQuantity[7].style.display = "flex";
 
     if (quantitiesLemonJuice >= 1) {
         btnConfirmOrder[7].style.display = "block";
@@ -1032,6 +1050,7 @@ btnLessLemonJuice.addEventListener("click", () => {
     }
 
     productQuantity[7].textContent = quantitiesLemonJuice;
+    productQuantity[7].style.display = "flex";
 
     if (quantitiesLemonJuice == 0) {
         btnConfirmOrder[7].style.display = "none";
@@ -1048,6 +1067,7 @@ btnMorePineappleJuice.addEventListener("click", () => {
     valuePineappleJuice += 7.5;
 
     productQuantity[8].textContent = quantitiesPineappleJuice;
+    productQuantity[8].style.display = "flex";
 
     if (quantitiesPineappleJuice >= 1) {
         btnConfirmOrder[8].style.display = "block";
@@ -1062,6 +1082,7 @@ btnLessPineappleJuice.addEventListener("click", () => {
     }
 
     productQuantity[8].textContent = quantitiesPineappleJuice;
+    productQuantity[8].style.display = "flex";
 
     if (quantitiesPineappleJuice == 0) {
         btnConfirmOrder[8].style.display = "none";

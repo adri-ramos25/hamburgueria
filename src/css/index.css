@@ -111,7 +111,6 @@ button{
 .box-products{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     border: 5px solid #6b2100;
     border-radius: 20px;
     margin: 30px;
@@ -125,7 +124,6 @@ button{
     flex-direction: column;
     align-items: center;
     background-color: #aa3613;
-    margin-top: 10px;
     font-size: 12px;
     border: 5px solid #6b2100;
     border-radius: 20px;
@@ -139,6 +137,7 @@ button{
 .align-btns-products{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .margin-btns-products{
     margin: 10px;
