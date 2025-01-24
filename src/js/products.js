@@ -1,5 +1,7 @@
 const btnProduct = document.getElementsByClassName("btn-product");
 
+const boxBackground = document.getElementsByClassName("box-background")[0];
+
 // Caixa que mostra o produto selecionado
 const boxSelectedProduct = document.getElementById("box-selected-product");
 
@@ -15,16 +17,13 @@ const boxAddres = document.getElementsByClassName("box-address")[0];
 
 const btnConfirmAddress = document.getElementById("btn-confirm-address");
 
-// Produto selecionado pelo usuario
-let selectedProduct = "";
-
 
 hideImagesAndNames();
 
 
 // Hamburguer classico
 btnProduct[0].addEventListener("click", () => {
-    selectedProduct = "hamburguer classico";
+    btnShowOrders.style.display = "none";
 
     showBoxSelectedProduct();
 
@@ -45,7 +44,7 @@ btnProduct[0].addEventListener("click", () => {
 
 // Hamburguer vegetariano
 btnProduct[1].addEventListener("click", () => {
-    selectedProduct = "hamburguer vegetariano";
+    btnShowOrders.style.display = "none";
 
     showBoxSelectedProduct();
 
@@ -66,7 +65,7 @@ btnProduct[1].addEventListener("click", () => {
 
 // Hamburguer bbq bacon
 btnProduct[2].addEventListener("click", () => {
-    selectedProduct = "hamburguer bacon";
+    btnShowOrders.style.display = "none";
 
     showBoxSelectedProduct();
 
@@ -87,7 +86,7 @@ btnProduct[2].addEventListener("click", () => {
 
 // Coca-cola
 btnProduct[3].addEventListener("click", () => {
-    selectedProduct = "coca";
+    btnShowOrders.style.display = "none";
 
     showBoxSelectedProduct();
 
@@ -108,7 +107,7 @@ btnProduct[3].addEventListener("click", () => {
 
 // Fanta
 btnProduct[4].addEventListener("click", () => {
-    selectedProduct = "fanta";
+    btnShowOrders.style.display = "none";
 
     showBoxSelectedProduct();
 
@@ -129,7 +128,7 @@ btnProduct[4].addEventListener("click", () => {
 
 // Sprite
 btnProduct[5].addEventListener("click", () => {
-    selectedProduct = "sprite";
+    btnShowOrders.style.display = "none";
 
     showBoxSelectedProduct();
 
@@ -150,7 +149,7 @@ btnProduct[5].addEventListener("click", () => {
 
 // Suco de laranja
 btnProduct[6].addEventListener("click", () => {
-    selectedProduct = "suco de laranja";
+    btnShowOrders.style.display = "none";
 
     showBoxSelectedProduct();
 
@@ -172,7 +171,7 @@ btnProduct[6].addEventListener("click", () => {
 
 // Suco de limao
 btnProduct[7].addEventListener("click", () => {
-    selectedProduct = "suco de limao";
+    btnShowOrders.style.display = "none";
 
     showBoxSelectedProduct();
 
@@ -193,7 +192,7 @@ btnProduct[7].addEventListener("click", () => {
 
 // Suco de abacaxi
 btnProduct[8].addEventListener("click", () => {
-    selectedProduct = "suco de abacaxi";
+    btnShowOrders.style.display = "none";
 
     showBoxSelectedProduct();
 
@@ -212,11 +211,10 @@ btnProduct[8].addEventListener("click", () => {
 })
 
 
-
-
-
 btnBackSelectedProduct.addEventListener("click", () => {
     boxSelectedProduct.style.display = "none";
+
+    boxBackground.style.display = "none";
 
     if (quantitiesClassicBurguer>=1 || quantitiesVegetarianBurguer>=1 || quantitiesBaconBurguer>=1 || quantitiesCocaCola>=1 || quantitiesFanta>=1 || quantitiesSprite>=1 || quantitiesOrangeJuice>=1 || quantitiesLemonJuice>=1 || quantitiesPineappleJuice>=1) {
         btnShowOrders.style.display = "block";
@@ -246,7 +244,6 @@ btnBackSelectedProduct.addEventListener("click", () => {
     nameSelectedProduct[7].style.display = "none";  
     nameSelectedProduct[8].style.display = "none";
 })
-
 
 
 btnConfirmAddress.addEventListener("click", () => {
@@ -282,12 +279,13 @@ function hideImagesAndNames() {
 }
 
 
-
 // Mostra a caixa dos produtos selecionados
 function showBoxSelectedProduct() {
+    boxBackground.style.display = "block";
+    boxBackground.style.display = "flex";
     textQuantity.style.display = "none";
     boxSelectedProduct.style.display = "block";
     boxSelectedProduct.style.display = "flex";
     btnBackSelectedProduct.style.display = "block";
-    btnShowOrders.style.display = "none";
+    btnShowOrders.style.display;
 }

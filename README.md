@@ -14,6 +14,11 @@ Este é o meu primeiro projeto como desenvolvedor front-end. Nele eu pude aplica
 
 Você pode ver o projeto funcionando através do seguinte link: https://adri-ramos25.github.io/hamburgueria/
 
+Ou, se preferir rodar localmente:
+
+1. Clone o repositório: `git clone https://github.com/adri-ramos25/hamburgueria.git`
+2. Abra o arquivo `index.html` no navegador.
+
 
 
 ## Status do Projeto
@@ -61,10 +66,3 @@ README.md                    # Informações do projeto
 credits.html                 # Página dos créditos das imagens utilizadas no projeto
 index.html                   # Página inicial
 ```
-
-
-
-## Como Usar
-
-1. Clone o repositório: `git clone https://github.com/adri-ramos25/hamburgueria.git`
-2. Abra o arquivo `index.html` no navegador.

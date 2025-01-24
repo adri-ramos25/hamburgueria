@@ -29,7 +29,7 @@
         width: 300px;
     }
     #title-credits-page{
-        font-size: 25px;
+        font-size: 23px;
     }
 
 
@@ -37,5 +37,12 @@
     /* Pagina dos creditos das imagens */
     .box-links{
         width: 20em;
+    }
+}
+
+
+@media (max-width: 386px) {
+    #title-credits-page{
+        font-size: 20px;
     }
 }

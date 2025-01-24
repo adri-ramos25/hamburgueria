@@ -4,8 +4,12 @@ const boxOrders = document.getElementById("box-orders");
 
 const btnBackBoxOrders = document.getElementById("btn-back-box-orders");
 
+const input = document.getElementById("input");
+
 
 btnShowOrders.addEventListener("click", () => {
+    boxBackground.style.display = "block";
+
     boxOrders.style.display = "block";
 
     totalToPay = valueClassicBurguer + valueVegetarianBurguer + valueBaconBurguer + valueCocaCola + valueFanta + valueSprite + valueOrangeJuice + valueLemonJuice + valuePineappleJuice;
@@ -14,12 +18,7 @@ btnShowOrders.addEventListener("click", () => {
 })
 
 btnBackBoxOrders.addEventListener("click", () => {
+    boxBackground.style.display = "none";
     boxOrders.style.display = "none";
     btnShowOrders.style.display = "block";
 })
-
-
-
-if (selectedProduct == "") {
-    btnShowOrders.style.display = "none";
-}

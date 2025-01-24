@@ -137,9 +137,9 @@ btnRemoveOrder[8].addEventListener("click", () => {
 
 
 
-
 function numProductsAdded() {
     if (quantityAddedProducts <= 0) {
+        boxBackground.style.display = "none";
         boxOrders.style.display = "none";
         btnShowOrders.style.display = "none";
     }
