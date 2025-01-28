@@ -3,8 +3,8 @@
     background-color: #6b2100;
     width: 200px;
     height: 30px;
-    margin-top: 15px;
     border-radius: 20px;
+    margin-top: 10px;
     font-size: 14px;
     color: #ffcf57;
     transition: 0.2s ease;
@@ -78,17 +78,25 @@
 /* Botoes que ficam dentro da caixa dos pedidos adicionados */
 .btns-box-requests{
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
-
-/* Botao que confirma os pedidos que o usuario adicionou */
-.btn-confirm-orders{
-    margin-top: 30px;
+.btn-confirm-orders, #btn-back-box-orders{
+    background-color: #6b2100;
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+    margin: 10px;
+    margin-top: 0;
+    font-size: 14px;
+    color: #ffcf57;
+    transition: 0.2s ease;
+}
+.btn-confirm-orders:hover{
+    background-color: #106310;
 }
 
 .text-added{
-    margin-top: 10px;
     margin-bottom: 10px;
 }
 
@@ -104,45 +112,30 @@
     display: none;
 }
 
+.box-products-added{
+    background-color: #4b1d02;
+    border-radius: 20px;
+}
+
 .name-added-product{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 10px;
-    color: #aa3613;
+    color: #ffcf57;
     height: 30px;
 }
 
 .btn-remove-order{
     width: 20px;
     height: 20px;
-    color: #ff0000;
+    color: #c51212;
     font-size: 20px;
+    margin-bottom: 2px;
 }
 
-.text-total-to-pay{
-    font-size: 12px;
-    color: #ffcf57;
-    display: none;
-}
-
-.added-products, .text-total-to-pay{
+.added-products{
     margin: 30px;
-}
-
-/* Botao que esconde a caixa dos pedidos (botao "voltar") */
-.btn-back-requests{
-    background-color: #6b2100;
-    width: 100px;
-    height: 30px;
-    margin: 20px;
-    border-radius: 20px;
-    font-size: 14px;
-    color: #ffcf57;
-    transition: 0.2s ease;
-}
-.btn-back-requests:hover{
-    background-color: #cc0000;
 }
 
 
@@ -152,16 +145,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    position: fixed;
-    top: 170px;
     background-color: #361302;
     color: #ffcf57;
+    font-size: 12px;
     width: 400px;
     height: 270px;
     border: 5px solid #772f0d;
     border-radius: 20px;
     display: none;
+}
+.text-attention{
+    font-size: 20px;
+    color: #c51212;
 }
 
 
@@ -173,7 +168,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: fixed;
     top: 170px;
     width: 400px;
     height: 270px;
@@ -201,6 +195,20 @@
     color: #ffcf57;
 }
 
+
+/* Botao "Voltar" que fica na caixa dos pedidos adicionados */
+#btn-back-box-orders:hover{
+    background-color: #ff0000;
+}
+
+
+/* Botao que confirma o endereco de entrega que o usuario deve informar depois que ele confirma os pedidos que ele adicionou */
+#btn-confirm-address{
+    margin-bottom: 20px;
+    display: none;
+}
+
+
 /* Caixa dos pedidos */
 #box-orders{
     display: flex;
@@ -219,7 +227,9 @@
 }
 
 #text-total-to-pay{
-    margin-top: 30px;
+    color: #ffcf57;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 

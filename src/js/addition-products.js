@@ -118,6 +118,7 @@ btnConfirmOrders[0].addEventListener("click", () => {
     btnShowOrders.style.display = "none";
     boxAddres.style.display = "block";
     boxAddres.style.display = "flex";
+    boxBackground.style.display = "flex";
 })
 
 
@@ -917,7 +918,7 @@ btnMoreCocaCola.addEventListener("click", () => {
 btnLessCocaCola.addEventListener("click", () => {
     valueCocaCola -= 8;
 
-    if (quantitiesClassicBurguer >= 1) {
+    if (quantitiesCocaCola >= 1) {
         quantitiesCocaCola -= 1;
     }
 
@@ -925,7 +926,7 @@ btnLessCocaCola.addEventListener("click", () => {
     productQuantity[3].style.display = "flex";
 
     if (quantitiesCocaCola == 0) {
-        btnConfirmOrder[0].style.display = "none";
+        btnConfirmOrder[3].style.display = "none";
     }
 })
 
@@ -956,7 +957,7 @@ btnLessFanta.addEventListener("click", () => {
     productQuantity[4].style.display = "flex";
 
     if (quantitiesFanta == 0) {
-        btnConfirmOrder[0].style.display = "none";
+        btnConfirmOrder[4].style.display = "none";
     }
 })
 

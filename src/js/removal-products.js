@@ -1,12 +1,17 @@
 const btnRemoveOrder = document.getElementsByClassName("btn-remove-order");
 
-// Hamburguer classico
+// Remove hamburguer classico dos pedidos
 btnRemoveOrder[0].addEventListener("click", () => { 
     valueClassicBurguer = 0;
 
     quantityAddedProducts -= 1;
 
     verifyOrderClassicBurguer -= 1;
+
+    totalToPay = valueClassicBurguer + valueVegetarianBurguer + valueBaconBurguer + valueCocaCola + valueFanta + valueSprite + valueOrangeJuice + valueLemonJuice + valuePineappleJuice;
+
+    textTotalToPay.textContent = "COM ISSO, O TOTAL A PAGAR É " + totalToPay + " REAIS!";
+    textTotalToPay.style.fontSize = "12px";
 
     boxAddedProduct[0].style.display = "none";
 
@@ -15,13 +20,18 @@ btnRemoveOrder[0].addEventListener("click", () => {
     numProductsAdded();
 })
 
-// Hamburguer vegetariano
+// Remove hamburguer vegetariano dos pedidos
 btnRemoveOrder[1].addEventListener("click", () => { 
     valueVegetarianBurguer = 0;
 
     quantityAddedProducts -= 1;
 
     verifyOrderVegetarianBurguer -= 1;
+
+    totalToPay = valueClassicBurguer + valueVegetarianBurguer + valueBaconBurguer + valueCocaCola + valueFanta + valueSprite + valueOrangeJuice + valueLemonJuice + valuePineappleJuice;
+
+    textTotalToPay.textContent = "COM ISSO, O TOTAL A PAGAR É " + totalToPay + " REAIS!";
+    textTotalToPay.style.fontSize = "12px";
 
     boxAddedProduct[1].style.display = "none";
 
@@ -30,13 +40,18 @@ btnRemoveOrder[1].addEventListener("click", () => {
     numProductsAdded();
 })
 
-// Hamburguer bbq bacon
+// Remove hamburguer bbq bacon dos pedidos
 btnRemoveOrder[2].addEventListener("click", () => { 
     valueBaconBurguer = 0;
 
     quantityAddedProducts -= 1;
 
     verifyOrderBaconBurguer -= 1;
+
+    totalToPay = valueClassicBurguer + valueVegetarianBurguer + valueBaconBurguer + valueCocaCola + valueFanta + valueSprite + valueOrangeJuice + valueLemonJuice + valuePineappleJuice;
+
+    textTotalToPay.textContent = "COM ISSO, O TOTAL A PAGAR É " + totalToPay + " REAIS!";
+    textTotalToPay.style.fontSize = "12px";
 
     boxAddedProduct[2].style.display = "none";
 
@@ -45,13 +60,18 @@ btnRemoveOrder[2].addEventListener("click", () => {
     numProductsAdded();
 })
 
-// Coca cola
+// Remove coca-cola dos pedidos
 btnRemoveOrder[3].addEventListener("click", () => {
     valueCocaCola = 0;
  
     quantityAddedProducts -= 1;
 
     verifyOrderCocaCola -= 1;
+
+    totalToPay = valueClassicBurguer + valueVegetarianBurguer + valueBaconBurguer + valueCocaCola + valueFanta + valueSprite + valueOrangeJuice + valueLemonJuice + valuePineappleJuice;
+
+    textTotalToPay.textContent = "COM ISSO, O TOTAL A PAGAR É " + totalToPay + " REAIS!";
+    textTotalToPay.style.fontSize = "12px";
 
     boxAddedProduct[3].style.display = "none";
 
@@ -60,13 +80,18 @@ btnRemoveOrder[3].addEventListener("click", () => {
     numProductsAdded();
 })
 
-// Fanta
+// Remove fanta dos pedidos
 btnRemoveOrder[4].addEventListener("click", () => { 
     valueFanta = 0;
 
     quantityAddedProducts -= 1;
 
     verifyOrderFanta -= 1;
+
+    totalToPay = valueClassicBurguer + valueVegetarianBurguer + valueBaconBurguer + valueCocaCola + valueFanta + valueSprite + valueOrangeJuice + valueLemonJuice + valuePineappleJuice;
+
+    textTotalToPay.textContent = "COM ISSO, O TOTAL A PAGAR É " + totalToPay + " REAIS!";
+    textTotalToPay.style.fontSize = "12px";
 
     boxAddedProduct[4].style.display = "none";
 
@@ -75,13 +100,18 @@ btnRemoveOrder[4].addEventListener("click", () => {
     numProductsAdded();
 })
 
-// Sprite
+// Remove sprite dos pedidos
 btnRemoveOrder[5].addEventListener("click", () => { 
     valueSprite = 0;
 
     quantityAddedProducts -= 1;
 
     verifyOrderSprite -= 1;
+
+    totalToPay = valueClassicBurguer + valueVegetarianBurguer + valueBaconBurguer + valueCocaCola + valueFanta + valueSprite + valueOrangeJuice + valueLemonJuice + valuePineappleJuice;
+
+    textTotalToPay.textContent = "COM ISSO, O TOTAL A PAGAR É " + totalToPay + " REAIS!";
+    textTotalToPay.style.fontSize = "12px";
 
     boxAddedProduct[5].style.display = "none";
 
@@ -90,13 +120,18 @@ btnRemoveOrder[5].addEventListener("click", () => {
     numProductsAdded();
 })
 
-// Suco de laranja
+// Remove suco de laranja dos pedidos
 btnRemoveOrder[6].addEventListener("click", () => { 
     valueOrangeJuice = 0;
 
     quantityAddedProducts -= 1;
 
     verifyOrderOrangeJuice -= 1;
+
+    totalToPay = valueClassicBurguer + valueVegetarianBurguer + valueBaconBurguer + valueCocaCola + valueFanta + valueSprite + valueOrangeJuice + valueLemonJuice + valuePineappleJuice;
+
+    textTotalToPay.textContent = "COM ISSO, O TOTAL A PAGAR É " + totalToPay + " REAIS!";
+    textTotalToPay.style.fontSize = "12px";
 
     boxAddedProduct[6].style.display = "none";
 
@@ -105,13 +140,18 @@ btnRemoveOrder[6].addEventListener("click", () => {
     numProductsAdded();
 })
 
-// Suco de limao
+// Remove suco de limao dos pedidos
 btnRemoveOrder[7].addEventListener("click", () => { 
     valueLemonJuice = 0;
 
     quantityAddedProducts -= 1;
 
     verifyOrderLemonJuice -= 1;
+
+    totalToPay = valueClassicBurguer + valueVegetarianBurguer + valueBaconBurguer + valueCocaCola + valueFanta + valueSprite + valueOrangeJuice + valueLemonJuice + valuePineappleJuice;
+
+    textTotalToPay.textContent = "COM ISSO, O TOTAL A PAGAR É " + totalToPay + " REAIS!";
+    textTotalToPay.style.fontSize = "12px";
 
     boxAddedProduct[7].style.display = "none";
 
@@ -120,13 +160,18 @@ btnRemoveOrder[7].addEventListener("click", () => {
     numProductsAdded();
 })
 
-// Suco de abacaxi
+// Remove suco de abacaxi dos pedidos
 btnRemoveOrder[8].addEventListener("click", () => { 
     valuePineappleJuice = 0;
 
     quantityAddedProducts -= 1;
 
     verifyOrderPineappleJuice -= 1;
+
+    totalToPay = valueClassicBurguer + valueVegetarianBurguer + valueBaconBurguer + valueCocaCola + valueFanta + valueSprite + valueOrangeJuice + valueLemonJuice + valuePineappleJuice;
+
+    textTotalToPay.textContent = "COM ISSO, O TOTAL A PAGAR É " + totalToPay + " REAIS!";
+    textTotalToPay.style.fontSize = "12px";
 
     boxAddedProduct[8].style.display = "none";
 
@@ -137,6 +182,7 @@ btnRemoveOrder[8].addEventListener("click", () => {
 
 
 
+// As caixas somem se a quantidade de produtos adicionados aos pedidos for 0
 function numProductsAdded() {
     if (quantityAddedProducts <= 0) {
         boxBackground.style.display = "none";

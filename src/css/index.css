@@ -7,7 +7,6 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    font-family: Sans-Serif;
     font-weight: bold;
 }
 ul{
@@ -25,7 +24,7 @@ input{
     width: 300px;
     height: 40px;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 20px;
 }
 button{
@@ -95,6 +94,7 @@ button{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-color: #f89147;
     text-align: center;
     color: #6b2100;
@@ -116,10 +116,13 @@ button{
     margin: 30px;
     padding: 10px 10px;
 }
+
+/* Caixa que aparece para o usuario nao clicar em outras funcionalidades quando ele esta realizando alguma acao */
 .box-background{
     background-color: rgb(65, 43, 3, 50%);
     display: flex;
     justify-content: center;
+    align-items: center;
     position: fixed;
     top: 0;
     width: 100%;
@@ -181,39 +184,37 @@ button{
     margin-bottom: 20px;
 }
 
-
 /* Imagens dos refrigerantes */
 .image-btn-coca-cola{
-    width: 2.5em;
-    margin-top: 15px;
+    width: 2em;
+    margin-top: 25px;
     margin-bottom: 20px;
 }
 .image-btn-fanta{
-    width: 3em;
-    margin-top: 22px;
+    width: 2.5em;
+    margin-top: 27px;
     margin-bottom: 20px;
 }
 .image-btn-sprite{
-    width: 4em;
-    margin-top: 15px;
+    width: 2.3em;
+    margin-top: 23px;
     margin-bottom: 20px;
 }
 
-
 /* Imagens dos sucos */
 .image-btn-orange-juice{
-    width: 3.5em;
+    width: 3em;
     margin-top: 15px;
     margin-bottom: 20px;
 }
 .image-btn-lemon-juice{
-    width: 3em;
-    margin-top: 32px;
+    width: 2.5em;
+    margin-top: 30px;
     margin-bottom: 20px;
 }
 .image-btn-pineapple-juice{
-    width: 2em;
-    margin-top: 15px;
+    width: 1.5em;
+    margin-top: 27px;
     margin-bottom: 20px;
 }
 
@@ -344,6 +345,12 @@ button{
 }
 .text-contact-instagram{
     width: 9em;
+}
+.link-back-to-header{
+    width: 11em;
+    margin-top: 80px;
+    font-size: 14px;
+    text-align: center;
 }
 .box-credits-links{
     width: 28em;

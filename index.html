@@ -7,15 +7,16 @@
     <link rel="stylesheet" href="src/css/index.css">
     <link rel="stylesheet" href="src/css/features.css">
     <link rel="stylesheet" href="src/css/responsive.css">
+    <link rel="stylesheet" href="src/css/font-family.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <link rel="icon" type="image/png" href="src/images/burguer-joint-icon.png">
+    <link rel="icon" href="src/images/logo-burguer-joint.png">
     <title>HAMBURGUERIA</title>
 </head>
 
 <body>
     <header>
         <!-- Secao 1 (cabecalho) -->
-        <section>
+        <section id="cabecalho">
             <div class="box-header-section">
                 <img class="logo-burguer-joint" src="src/images/logo-burguer-joint.png" alt="logo da hamburgueria">
 
@@ -445,13 +446,24 @@
 
                         <!-- Fecha a caixa do produto selecionado -->
                         <button id="btn-back-selected-product" class="styles-btns-selected-product red-background">VOLTAR</button>
+                    </div>
 
+
+
+                    <div class="box-address">
+                        <p class="text-attention">ATENÇÃO!</p>
+                        <br>
+                        <p>ESTE PROJETO É APENAS UMA SIMULAÇÃO. OS DADOS DIGITADOS E CONFIRMADOS NÃO SERÃO ARMAZENADOS, ENVIADOS OU UTILIZADOS, ENTÃO DIGITE QUALQUER COISA FICTÍCIA ABAIXO</p>
+
+                        <input id="input" type="text" placeholder="DIGITE QUALQUER COISA FICTÍCIA">
+
+                        <button type="submit" id="btn-confirm-address" class="styles-btns-selected-product">CONFIRMAR ENDEREÇO</button>
                     </div>
 
                 </div>
 
 
-                    <button id="btn-show-requests" class="styles-btns-selected-product">PEDIDOS</button>
+                    <button id="btn-show-requests" class="styles-btns-selected-product">PEDIDOS ADICIONADOS</button>
 
 
 
@@ -459,124 +471,126 @@
                     <div id="box-orders">
                         <p class="text-added">VOCÊ ADICIONOU:</p>
 
-                        <!-- Hamburguer classico -->
-                        <div class="box-added-product">
-                            <!-- Nome "Hambúrguer Clássico"-->
-                            <p class="name-added-product"></p>
+                        <div class="box-products-added">
+                            <!-- Hamburguer classico -->
+                            <div class="box-added-product">
+                                <!-- Nome "Hambúrguer Clássico"-->
+                                <p class="name-added-product"></p>
 
-                            <!-- Botao que remove o hamburguer classico dos pedidos -->
-                            <button class="btn-remove-order">
-                                <i class="bi bi-x-circle"></i>
-                            </button>
-                        </div>
-
-
-
-                        <!-- Hamburguer vegetariano -->
-                        <div class="box-added-product">
-                            <!-- Nome "Hambúrguer Vegetariano" -->
-                            <p class="name-added-product"></p>
-
-                            <!-- Botao que remove o hamburguer classico dos pedidos -->
-                            <button class="btn-remove-order">
-                                <i class="bi bi-x-circle"></i>
-                            </button>
-                        </div>
+                                <!-- Botao que remove o hamburguer classico dos pedidos -->
+                                <button class="btn-remove-order">
+                                    <i class="bi bi-x-circle"></i>
+                                </button>
+                            </div>
 
 
 
-                        <!-- Hamburguer bbq bacon -->
-                        <div class="box-added-product">
-                            <!-- Nome "Hambúrguer Bbq Bacon" -->
-                            <p class="name-added-product"></p>
+                            <!-- Hamburguer vegetariano -->
+                            <div class="box-added-product">
+                                <!-- Nome "Hambúrguer Vegetariano" -->
+                                <p class="name-added-product"></p>
 
-                            <!-- Botao que remove o hamburguer bbq bacon dos pedidos -->
-                            <button class="btn-remove-order">
-                                <i class="bi bi-x-circle"></i>
-                            </button>
-                        </div>
-
-
-
-                        <!-- Coca Cola -->
-                        <div class="box-added-product">
-                            <!-- Nome "Coca Cola" -->
-                            <p class="name-added-product"></p>
-
-                            <!-- Botao que remove a coca cola dos pedidos -->
-                            <button class="btn-remove-order">
-                                <i class="bi bi-x-circle"></i>
-                            </button>
-                        </div>
+                                <!-- Botao que remove o hamburguer classico dos pedidos -->
+                                <button class="btn-remove-order">
+                                    <i class="bi bi-x-circle"></i>
+                                </button>
+                            </div>
 
 
 
+                            <!-- Hamburguer bbq bacon -->
+                            <div class="box-added-product">
+                                <!-- Nome "Hambúrguer Bbq Bacon" -->
+                                <p class="name-added-product"></p>
 
-                        <!-- Fanta -->
-                        <div class="box-added-product">
-                            <!-- Nome "Fanta" -->
-                            <p class="name-added-product"></p>
+                                <!-- Botao que remove o hamburguer bbq bacon dos pedidos -->
+                                <button class="btn-remove-order">
+                                    <i class="bi bi-x-circle"></i>
+                                </button>
+                            </div>
 
-                            <!-- Botao que remove a fanta dos pedidos -->
-                            <button class="btn-remove-order">
-                                <i class="bi bi-x-circle"></i>
-                            </button>
-                        </div>
+
+
+                            <!-- Coca Cola -->
+                            <div class="box-added-product">
+                                <!-- Nome "Coca Cola" -->
+                                <p class="name-added-product"></p>
+
+                                <!-- Botao que remove a coca cola dos pedidos -->
+                                <button class="btn-remove-order">
+                                    <i class="bi bi-x-circle"></i>
+                                </button>
+                            </div>
 
 
 
 
-                        <!-- Sprite -->
-                        <div class="box-added-product">
-                            <!-- Nome "Sprite" -->
-                            <p class="name-added-product"></p>
+                            <!-- Fanta -->
+                            <div class="box-added-product">
+                                <!-- Nome "Fanta" -->
+                                <p class="name-added-product"></p>
 
-                            <!-- Botao que remove o sprite dos pedidos -->
-                            <button class="btn-remove-order">
-                                <i class="bi bi-x-circle"></i>
-                            </button>
-                        </div>
-
-
-
-
-                        <!-- Suco de laranja -->
-                        <div class="box-added-product">
-                            <!-- Nome "Sprite" -->
-                            <p class="name-added-product"></p>
-
-                            <!-- Botao que remove o sprite dos pedidos -->
-                            <button class="btn-remove-order">
-                                <i class="bi bi-x-circle"></i>
-                            </button>
-                        </div>
+                                <!-- Botao que remove a fanta dos pedidos -->
+                                <button class="btn-remove-order">
+                                    <i class="bi bi-x-circle"></i>
+                                </button>
+                            </div>
 
 
 
 
-                        <!-- Suco de limao -->
-                        <div class="box-added-product">
-                            <!-- Nome "Sprite" -->
-                            <p class="name-added-product"></p>
+                            <!-- Sprite -->
+                            <div class="box-added-product">
+                                <!-- Nome "Sprite" -->
+                                <p class="name-added-product"></p>
 
-                            <!-- Botao que remove o sprite dos pedidos -->
-                            <button class="btn-remove-order">
-                                <i class="bi bi-x-circle"></i>
-                            </button>
-                        </div>
-
-
+                                <!-- Botao que remove o sprite dos pedidos -->
+                                <button class="btn-remove-order">
+                                    <i class="bi bi-x-circle"></i>
+                                </button>
+                            </div>
 
 
-                        <!-- Suco de abacaxi -->
-                        <div class="box-added-product">
-                            <!-- Nome "Sprite" -->
-                            <p class="name-added-product"></p>
 
-                            <!-- Botao que remove o sprite dos pedidos -->
-                            <button class="btn-remove-order">
-                                <i class="bi bi-x-circle"></i>
-                            </button>
+
+                            <!-- Suco de laranja -->
+                            <div class="box-added-product">
+                                <!-- Nome "Sprite" -->
+                                <p class="name-added-product"></p>
+
+                                <!-- Botao que remove o sprite dos pedidos -->
+                                <button class="btn-remove-order">
+                                    <i class="bi bi-x-circle"></i>
+                                </button>
+                            </div>
+
+
+
+
+                            <!-- Suco de limao -->
+                            <div class="box-added-product">
+                                <!-- Nome "Sprite" -->
+                                <p class="name-added-product"></p>
+
+                                <!-- Botao que remove o sprite dos pedidos -->
+                                <button class="btn-remove-order">
+                                    <i class="bi bi-x-circle"></i>
+                                </button>
+                            </div>
+
+
+
+
+                            <!-- Suco de abacaxi -->
+                            <div class="box-added-product">
+                                <!-- Nome "Sprite" -->
+                                <p class="name-added-product"></p>
+
+                                <!-- Botao que remove o sprite dos pedidos -->
+                                <button class="btn-remove-order">
+                                    <i class="bi bi-x-circle"></i>
+                                </button>
+                            </div>
                         </div>
 
 
@@ -585,20 +599,10 @@
                         <p id="text-total-to-pay"></p>
 
                         <div class="btns-box-requests">
-                            <button class="btn-confirm-orders styles-btns-selected-product">CONFIRMAR PEDIDOS</button>
+                            <button class="btn-confirm-orders">CONFIRMAR PEDIDOS</button>
 
-                            <button id="btn-back-box-orders" class="styles-btns-selected-product red-background">VOLTAR</button>
+                            <button id="btn-back-box-orders" class="red-background">VOLTAR</button>
                         </div>
-                    </div>
-
-
-
-                    <div class="box-address">
-                        <p>CERTIFIQUE-SE DE INFORMAR O ENDEREÇO CORRETO!</p>
-
-                        <input id="input" type="text">
-
-                        <button type="submit" id="btn-confirm-address" class="styles-btns-selected-product">CONFIRMAR ENDEREÇO</button>
                     </div>
         </section>
       
@@ -681,6 +685,8 @@
                     <i id="instagram-icon" class="bi bi-instagram"></i>
                     <p class="text-contact-instagram">@hamburgueria</p>
                 </div>
+
+                <a class="link-back-to-header" href="#cabecalho">VOLTAR PARA O TOPO</a>
             </div>
 
 
