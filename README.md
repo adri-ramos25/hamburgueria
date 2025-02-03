@@ -6,8 +6,7 @@
 
 ## Sobre o Projeto
 
-Este é o meu primeiro projeto como desenvolvedor front-end. Nele eu pude aplicar muitos conceitos das tecnologias que eu utilizo. Ele se trata de um site de uma hamburgueria fictícia, que permite que os usuários adicionem e removam produtos que foram adicionados aos pedidos.
-
+Este é o meu primeiro projeto como desenvolvedor front-end. Ele começou como uma página simples e eu fui melhorando-o com o tempo. Nele eu pude aplicar muitos conceitos das tecnologias que eu utilizo. Ele se trata de um site de uma hamburgueria fictícia, que permite que os usuários adicionem produtos disponíveis no cardápio aos pedidos e remova-os de forma simples.
 
 
 ## Acesso ao Projeto
